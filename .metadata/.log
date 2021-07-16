@@ -1,0 +1,2464 @@
+!SESSION 2021-07-16 09:13:48.626 -----------------------------------------------
+eclipse.buildId=4.16.0.I20200604-0540
+java.version=1.8.0_281
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=zh_CN
+Framework arguments:  -product org.eclipse.epp.package.committers.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.committers.product
+
+!ENTRY org.eclipse.egit.mylyn.ui 4 0 2021-07-16 09:13:50.310
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.egit.mylyn.ui [146]
+  Unresolved requirement: Require-Bundle: org.eclipse.mylyn.team.ui; bundle-version="[3.20.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.mylyn.team.ui; bundle-version="3.25.1.v20200512-2113"; singleton:="true"
+       org.eclipse.mylyn.team.ui [335]
+         Unresolved requirement: Require-Bundle: org.eclipse.mylyn.tasks.ui; bundle-version="[3.8.0,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.mylyn.tasks.ui; bundle-version="3.25.1.v20200512-0316"; singleton:="true"
+              org.eclipse.mylyn.tasks.ui [334]
+                Unresolved requirement: Require-Bundle: org.eclipse.mylyn.commons.notifications.feed; bundle-version="1.0.0"
+                  -> Bundle-SymbolicName: org.eclipse.mylyn.commons.notifications.feed; bundle-version="1.17.1.v20200511-1958"; singleton:="true"
+                     org.eclipse.mylyn.commons.notifications.feed [302]
+                       Unresolved requirement: Require-Bundle: com.sun.xml.bind; bundle-version="2.2.0"
+                         -> Bundle-SymbolicName: com.sun.xml.bind; bundle-version="2.3.3.v20201118-1818"
+                            com.sun.xml.bind [564]
+                              Unresolved requirement: Import-Package: com.sun.xml.fastinfoset.sax; resolution:="optional"
+                              Unresolved requirement: Import-Package: com.sun.xml.fastinfoset.stax; resolution:="optional"
+                              Unresolved requirement: Import-Package: org.jvnet.fastinfoset; resolution:="optional"
+                              Unresolved requirement: Import-Package: org.jvnet.fastinfoset.stax; resolution:="optional"
+                              Unresolved requirement: Import-Package: org.jvnet.staxex; resolution:="optional"
+                              Unresolved requirement: Import-Package: javax.activation; version="[1.2.0,2.0.0)"
+                                -> Export-Package: javax.activation; bundle-symbolic-name="javax.activation"; bundle-version="1.2.2.v20201119-1642"; version="1.2.2"
+                                   javax.activation [567]
+                                     Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=9.0))"
+  Unresolved requirement: Require-Bundle: org.eclipse.mylyn.tasks.ui; bundle-version="[3.20.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.mylyn.tasks.ui; bundle-version="3.25.1.v20200512-0316"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.mylyn.bugzilla.ui 4 0 2021-07-16 09:13:50.363
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.bugzilla.ui [295]
+  Unresolved requirement: Require-Bundle: org.eclipse.mylyn.tasks.ui; bundle-version="[3.8.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.mylyn.tasks.ui; bundle-version="3.25.1.v20200512-0316"; singleton:="true"
+       org.eclipse.mylyn.tasks.ui [334]
+         Unresolved requirement: Require-Bundle: org.eclipse.mylyn.commons.notifications.feed; bundle-version="1.0.0"
+           -> Bundle-SymbolicName: org.eclipse.mylyn.commons.notifications.feed; bundle-version="1.17.1.v20200511-1958"; singleton:="true"
+              org.eclipse.mylyn.commons.notifications.feed [302]
+                Unresolved requirement: Require-Bundle: com.sun.xml.bind; bundle-version="2.2.0"
+                  -> Bundle-SymbolicName: com.sun.xml.bind; bundle-version="2.3.3.v20201118-1818"
+                     com.sun.xml.bind [564]
+                       Unresolved requirement: Import-Package: com.sun.xml.fastinfoset.sax; resolution:="optional"
+                       Unresolved requirement: Import-Package: com.sun.xml.fastinfoset.stax; resolution:="optional"
+                       Unresolved requirement: Import-Package: org.jvnet.fastinfoset; resolution:="optional"
+                       Unresolved requirement: Import-Package: org.jvnet.fastinfoset.stax; resolution:="optional"
+                       Unresolved requirement: Import-Package: org.jvnet.staxex; resolution:="optional"
+                       Unresolved requirement: Import-Package: javax.activation; version="[1.2.0,2.0.0)"
+                         -> Export-Package: javax.activation; bundle-symbolic-name="javax.activation"; bundle-version="1.2.2.v20201119-1642"; version="1.2.2"
+                            javax.activation [567]
+                              Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=9.0))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.mylyn.builds.ui 4 0 2021-07-16 09:13:50.374
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.builds.ui [297]
+  Unresolved requirement: Require-Bundle: org.eclipse.mylyn.tasks.ui; bundle-version="3.8.0"
+    -> Bundle-SymbolicName: org.eclipse.mylyn.tasks.ui; bundle-version="3.25.1.v20200512-0316"; singleton:="true"
+       org.eclipse.mylyn.tasks.ui [334]
+         Unresolved requirement: Require-Bundle: org.eclipse.mylyn.commons.notifications.feed; bundle-version="1.0.0"
+           -> Bundle-SymbolicName: org.eclipse.mylyn.commons.notifications.feed; bundle-version="1.17.1.v20200511-1958"; singleton:="true"
+              org.eclipse.mylyn.commons.notifications.feed [302]
+                Unresolved requirement: Require-Bundle: com.sun.xml.bind; bundle-version="2.2.0"
+                  -> Bundle-SymbolicName: com.sun.xml.bind; bundle-version="2.3.3.v20201118-1818"
+                     com.sun.xml.bind [564]
+                       Unresolved requirement: Import-Package: com.sun.xml.fastinfoset.sax; resolution:="optional"
+                       Unresolved requirement: Import-Package: com.sun.xml.fastinfoset.stax; resolution:="optional"
+                       Unresolved requirement: Import-Package: org.jvnet.fastinfoset; resolution:="optional"
+                       Unresolved requirement: Import-Package: org.jvnet.fastinfoset.stax; resolution:="optional"
+                       Unresolved requirement: Import-Package: org.jvnet.staxex; resolution:="optional"
+                       Unresolved requirement: Import-Package: javax.activation; version="[1.2.0,2.0.0)"
+                         -> Export-Package: javax.activation; bundle-symbolic-name="javax.activation"; bundle-version="1.2.2.v20201119-1642"; version="1.2.2"
+                            javax.activation [567]
+                              Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=9.0))"
+  Unresolved requirement: Require-Bundle: org.eclipse.mylyn.team.ui; bundle-version="3.8.0"
+    -> Bundle-SymbolicName: org.eclipse.mylyn.team.ui; bundle-version="3.25.1.v20200512-2113"; singleton:="true"
+       org.eclipse.mylyn.team.ui [335]
+         Unresolved requirement: Require-Bundle: org.eclipse.mylyn.tasks.ui; bundle-version="[3.8.0,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.mylyn.tasks.ui; bundle-version="3.25.1.v20200512-0316"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.mylyn.commons.notifications.feed 4 0 2021-07-16 09:13:50.384
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.commons.notifications.feed [302]
+  Unresolved requirement: Require-Bundle: com.sun.xml.bind; bundle-version="2.2.0"
+    -> Bundle-SymbolicName: com.sun.xml.bind; bundle-version="2.3.3.v20201118-1818"
+       com.sun.xml.bind [564]
+         Unresolved requirement: Import-Package: com.sun.xml.fastinfoset.sax; resolution:="optional"
+         Unresolved requirement: Import-Package: com.sun.xml.fastinfoset.stax; resolution:="optional"
+         Unresolved requirement: Import-Package: org.jvnet.fastinfoset; resolution:="optional"
+         Unresolved requirement: Import-Package: org.jvnet.fastinfoset.stax; resolution:="optional"
+         Unresolved requirement: Import-Package: org.jvnet.staxex; resolution:="optional"
+         Unresolved requirement: Import-Package: javax.activation; version="[1.2.0,2.0.0)"
+           -> Export-Package: javax.activation; bundle-symbolic-name="javax.activation"; bundle-version="1.2.2.v20201119-1642"; version="1.2.2"
+              javax.activation [567]
+                Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=9.0))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.mylyn.context.tasks.ui 4 0 2021-07-16 09:13:50.394
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.context.tasks.ui [312]
+  Unresolved requirement: Require-Bundle: org.eclipse.mylyn.tasks.ui; bundle-version="3.8.0"
+    -> Bundle-SymbolicName: org.eclipse.mylyn.tasks.ui; bundle-version="3.25.1.v20200512-0316"; singleton:="true"
+       org.eclipse.mylyn.tasks.ui [334]
+         Unresolved requirement: Require-Bundle: org.eclipse.mylyn.commons.notifications.feed; bundle-version="1.0.0"
+           -> Bundle-SymbolicName: org.eclipse.mylyn.commons.notifications.feed; bundle-version="1.17.1.v20200511-1958"; singleton:="true"
+              org.eclipse.mylyn.commons.notifications.feed [302]
+                Unresolved requirement: Require-Bundle: com.sun.xml.bind; bundle-version="2.2.0"
+                  -> Bundle-SymbolicName: com.sun.xml.bind; bundle-version="2.3.3.v20201118-1818"
+                     com.sun.xml.bind [564]
+                       Unresolved requirement: Import-Package: com.sun.xml.fastinfoset.sax; resolution:="optional"
+                       Unresolved requirement: Import-Package: com.sun.xml.fastinfoset.stax; resolution:="optional"
+                       Unresolved requirement: Import-Package: org.jvnet.fastinfoset; resolution:="optional"
+                       Unresolved requirement: Import-Package: org.jvnet.fastinfoset.stax; resolution:="optional"
+                       Unresolved requirement: Import-Package: org.jvnet.staxex; resolution:="optional"
+                       Unresolved requirement: Import-Package: javax.activation; version="[1.2.0,2.0.0)"
+                         -> Export-Package: javax.activation; bundle-symbolic-name="javax.activation"; bundle-version="1.2.2.v20201119-1642"; version="1.2.2"
+                            javax.activation [567]
+                              Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=9.0))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.mylyn.gerrit.dashboard.ui 4 0 2021-07-16 09:13:50.402
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.gerrit.dashboard.ui [318]
+  Unresolved requirement: Require-Bundle: org.eclipse.mylyn.tasks.ui; bundle-version="3.11.0"
+    -> Bundle-SymbolicName: org.eclipse.mylyn.tasks.ui; bundle-version="3.25.1.v20200512-0316"; singleton:="true"
+       org.eclipse.mylyn.tasks.ui [334]
+         Unresolved requirement: Require-Bundle: org.eclipse.mylyn.commons.notifications.feed; bundle-version="1.0.0"
+           -> Bundle-SymbolicName: org.eclipse.mylyn.commons.notifications.feed; bundle-version="1.17.1.v20200511-1958"; singleton:="true"
+              org.eclipse.mylyn.commons.notifications.feed [302]
+                Unresolved requirement: Require-Bundle: com.sun.xml.bind; bundle-version="2.2.0"
+                  -> Bundle-SymbolicName: com.sun.xml.bind; bundle-version="2.3.3.v20201118-1818"
+                     com.sun.xml.bind [564]
+                       Unresolved requirement: Import-Package: com.sun.xml.fastinfoset.sax; resolution:="optional"
+                       Unresolved requirement: Import-Package: com.sun.xml.fastinfoset.stax; resolution:="optional"
+                       Unresolved requirement: Import-Package: org.jvnet.fastinfoset; resolution:="optional"
+                       Unresolved requirement: Import-Package: org.jvnet.fastinfoset.stax; resolution:="optional"
+                       Unresolved requirement: Import-Package: org.jvnet.staxex; resolution:="optional"
+                       Unresolved requirement: Import-Package: javax.activation; version="[1.2.0,2.0.0)"
+                         -> Export-Package: javax.activation; bundle-symbolic-name="javax.activation"; bundle-version="1.2.2.v20201119-1642"; version="1.2.2"
+                            javax.activation [567]
+                              Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=9.0))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.mylyn.gerrit.ui 4 0 2021-07-16 09:13:50.412
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.gerrit.ui [319]
+  Unresolved requirement: Require-Bundle: org.eclipse.mylyn.tasks.ui; bundle-version="3.8.0"
+    -> Bundle-SymbolicName: org.eclipse.mylyn.tasks.ui; bundle-version="3.25.1.v20200512-0316"; singleton:="true"
+       org.eclipse.mylyn.tasks.ui [334]
+         Unresolved requirement: Require-Bundle: org.eclipse.mylyn.commons.notifications.feed; bundle-version="1.0.0"
+           -> Bundle-SymbolicName: org.eclipse.mylyn.commons.notifications.feed; bundle-version="1.17.1.v20200511-1958"; singleton:="true"
+              org.eclipse.mylyn.commons.notifications.feed [302]
+                Unresolved requirement: Require-Bundle: com.sun.xml.bind; bundle-version="2.2.0"
+                  -> Bundle-SymbolicName: com.sun.xml.bind; bundle-version="2.3.3.v20201118-1818"
+                     com.sun.xml.bind [564]
+                       Unresolved requirement: Import-Package: com.sun.xml.fastinfoset.sax; resolution:="optional"
+                       Unresolved requirement: Import-Package: com.sun.xml.fastinfoset.stax; resolution:="optional"
+                       Unresolved requirement: Import-Package: org.jvnet.fastinfoset; resolution:="optional"
+                       Unresolved requirement: Import-Package: org.jvnet.fastinfoset.stax; resolution:="optional"
+                       Unresolved requirement: Import-Package: org.jvnet.staxex; resolution:="optional"
+                       Unresolved requirement: Import-Package: javax.activation; version="[1.2.0,2.0.0)"
+                         -> Export-Package: javax.activation; bundle-symbolic-name="javax.activation"; bundle-version="1.2.2.v20201119-1642"; version="1.2.2"
+                            javax.activation [567]
+                              Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=9.0))"
+  Unresolved requirement: Require-Bundle: org.eclipse.mylyn.reviews.ui
+    -> Bundle-SymbolicName: org.eclipse.mylyn.reviews.ui; bundle-version="2.16.0.v20190221-2342"; singleton:="true"
+       org.eclipse.mylyn.reviews.ui [329]
+         Unresolved requirement: Require-Bundle: org.eclipse.mylyn.tasks.ui; bundle-version="3.8.0"
+           -> Bundle-SymbolicName: org.eclipse.mylyn.tasks.ui; bundle-version="3.25.1.v20200512-0316"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.mylyn.tasks.ui; bundle-version="3.8.0"
+    -> Bundle-SymbolicName: org.eclipse.mylyn.tasks.ui; bundle-version="3.25.1.v20200512-0316"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.mylyn.hudson.core 4 0 2021-07-16 09:13:50.434
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.hudson.core [322]
+  Unresolved requirement: Require-Bundle: com.sun.xml.bind; bundle-version="2.2.0"
+    -> Bundle-SymbolicName: com.sun.xml.bind; bundle-version="2.3.3.v20201118-1818"
+       com.sun.xml.bind [564]
+         Unresolved requirement: Import-Package: com.sun.xml.fastinfoset.sax; resolution:="optional"
+         Unresolved requirement: Import-Package: com.sun.xml.fastinfoset.stax; resolution:="optional"
+         Unresolved requirement: Import-Package: org.jvnet.fastinfoset; resolution:="optional"
+         Unresolved requirement: Import-Package: org.jvnet.fastinfoset.stax; resolution:="optional"
+         Unresolved requirement: Import-Package: org.jvnet.staxex; resolution:="optional"
+         Unresolved requirement: Import-Package: javax.activation; version="[1.2.0,2.0.0)"
+           -> Export-Package: javax.activation; bundle-symbolic-name="javax.activation"; bundle-version="1.2.2.v20201119-1642"; version="1.2.2"
+              javax.activation [567]
+                Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=9.0))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.mylyn.hudson.ui 4 0 2021-07-16 09:13:50.444
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.hudson.ui [323]
+  Unresolved requirement: Require-Bundle: org.eclipse.ecf.discovery; bundle-version="3.0.0"; resolution:="optional"
+  Unresolved requirement: Require-Bundle: org.eclipse.ecf.provider.discovery; bundle-version="2.0.0"; resolution:="optional"
+  Unresolved requirement: Require-Bundle: org.eclipse.ecf.provider.jmdns; bundle-version="3.0.0"; resolution:="optional"
+  Unresolved requirement: Require-Bundle: org.eclipse.mylyn.hudson.core
+    -> Bundle-SymbolicName: org.eclipse.mylyn.hudson.core; bundle-version="1.17.0.v20190115-0250"; singleton:="true"
+       org.eclipse.mylyn.hudson.core [322]
+         Unresolved requirement: Require-Bundle: com.sun.xml.bind; bundle-version="2.2.0"
+           -> Bundle-SymbolicName: com.sun.xml.bind; bundle-version="2.3.3.v20201118-1818"
+              com.sun.xml.bind [564]
+                Unresolved requirement: Import-Package: com.sun.xml.fastinfoset.sax; resolution:="optional"
+                Unresolved requirement: Import-Package: com.sun.xml.fastinfoset.stax; resolution:="optional"
+                Unresolved requirement: Import-Package: org.jvnet.fastinfoset; resolution:="optional"
+                Unresolved requirement: Import-Package: org.jvnet.fastinfoset.stax; resolution:="optional"
+                Unresolved requirement: Import-Package: org.jvnet.staxex; resolution:="optional"
+                Unresolved requirement: Import-Package: javax.activation; version="[1.2.0,2.0.0)"
+                  -> Export-Package: javax.activation; bundle-symbolic-name="javax.activation"; bundle-version="1.2.2.v20201119-1642"; version="1.2.2"
+                     javax.activation [567]
+                       Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=9.0))"
+  Unresolved requirement: Require-Bundle: org.eclipse.mylyn.builds.ui
+    -> Bundle-SymbolicName: org.eclipse.mylyn.builds.ui; bundle-version="1.17.0.v20190111-2151"; singleton:="true"
+       org.eclipse.mylyn.builds.ui [297]
+         Unresolved requirement: Require-Bundle: org.eclipse.mylyn.tasks.ui; bundle-version="3.8.0"
+           -> Bundle-SymbolicName: org.eclipse.mylyn.tasks.ui; bundle-version="3.25.1.v20200512-0316"; singleton:="true"
+              org.eclipse.mylyn.tasks.ui [334]
+                Unresolved requirement: Require-Bundle: org.eclipse.mylyn.commons.notifications.feed; bundle-version="1.0.0"
+                  -> Bundle-SymbolicName: org.eclipse.mylyn.commons.notifications.feed; bundle-version="1.17.1.v20200511-1958"; singleton:="true"
+                     org.eclipse.mylyn.commons.notifications.feed [302]
+                       Unresolved requirement: Require-Bundle: com.sun.xml.bind; bundle-version="2.2.0"
+                         -> Bundle-SymbolicName: com.sun.xml.bind; bundle-version="2.3.3.v20201118-1818"
+         Unresolved requirement: Require-Bundle: org.eclipse.mylyn.team.ui; bundle-version="3.8.0"
+           -> Bundle-SymbolicName: org.eclipse.mylyn.team.ui; bundle-version="3.25.1.v20200512-2113"; singleton:="true"
+              org.eclipse.mylyn.team.ui [335]
+                Unresolved requirement: Require-Bundle: org.eclipse.mylyn.tasks.ui; bundle-version="[3.8.0,4.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.mylyn.tasks.ui; bundle-version="3.25.1.v20200512-0316"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.mylyn.reviews.ui 4 0 2021-07-16 09:13:50.462
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.reviews.ui [329]
+  Unresolved requirement: Require-Bundle: org.eclipse.mylyn.tasks.ui; bundle-version="3.8.0"
+    -> Bundle-SymbolicName: org.eclipse.mylyn.tasks.ui; bundle-version="3.25.1.v20200512-0316"; singleton:="true"
+       org.eclipse.mylyn.tasks.ui [334]
+         Unresolved requirement: Require-Bundle: org.eclipse.mylyn.commons.notifications.feed; bundle-version="1.0.0"
+           -> Bundle-SymbolicName: org.eclipse.mylyn.commons.notifications.feed; bundle-version="1.17.1.v20200511-1958"; singleton:="true"
+              org.eclipse.mylyn.commons.notifications.feed [302]
+                Unresolved requirement: Require-Bundle: com.sun.xml.bind; bundle-version="2.2.0"
+                  -> Bundle-SymbolicName: com.sun.xml.bind; bundle-version="2.3.3.v20201118-1818"
+                     com.sun.xml.bind [564]
+                       Unresolved requirement: Import-Package: com.sun.xml.fastinfoset.sax; resolution:="optional"
+                       Unresolved requirement: Import-Package: com.sun.xml.fastinfoset.stax; resolution:="optional"
+                       Unresolved requirement: Import-Package: org.jvnet.fastinfoset; resolution:="optional"
+                       Unresolved requirement: Import-Package: org.jvnet.fastinfoset.stax; resolution:="optional"
+                       Unresolved requirement: Import-Package: org.jvnet.staxex; resolution:="optional"
+                       Unresolved requirement: Import-Package: javax.activation; version="[1.2.0,2.0.0)"
+                         -> Export-Package: javax.activation; bundle-symbolic-name="javax.activation"; bundle-version="1.2.2.v20201119-1642"; version="1.2.2"
+                            javax.activation [567]
+                              Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=9.0))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.mylyn.tasks.ui 4 0 2021-07-16 09:13:50.464
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.tasks.ui [334]
+  Unresolved requirement: Require-Bundle: org.eclipse.mylyn.commons.notifications.feed; bundle-version="1.0.0"
+    -> Bundle-SymbolicName: org.eclipse.mylyn.commons.notifications.feed; bundle-version="1.17.1.v20200511-1958"; singleton:="true"
+       org.eclipse.mylyn.commons.notifications.feed [302]
+         Unresolved requirement: Require-Bundle: com.sun.xml.bind; bundle-version="2.2.0"
+           -> Bundle-SymbolicName: com.sun.xml.bind; bundle-version="2.3.3.v20201118-1818"
+              com.sun.xml.bind [564]
+                Unresolved requirement: Import-Package: com.sun.xml.fastinfoset.sax; resolution:="optional"
+                Unresolved requirement: Import-Package: com.sun.xml.fastinfoset.stax; resolution:="optional"
+                Unresolved requirement: Import-Package: org.jvnet.fastinfoset; resolution:="optional"
+                Unresolved requirement: Import-Package: org.jvnet.fastinfoset.stax; resolution:="optional"
+                Unresolved requirement: Import-Package: org.jvnet.staxex; resolution:="optional"
+                Unresolved requirement: Import-Package: javax.activation; version="[1.2.0,2.0.0)"
+                  -> Export-Package: javax.activation; bundle-symbolic-name="javax.activation"; bundle-version="1.2.2.v20201119-1642"; version="1.2.2"
+                     javax.activation [567]
+                       Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=9.0))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.mylyn.team.ui 4 0 2021-07-16 09:13:50.472
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.team.ui [335]
+  Unresolved requirement: Require-Bundle: org.eclipse.mylyn.tasks.ui; bundle-version="[3.8.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.mylyn.tasks.ui; bundle-version="3.25.1.v20200512-0316"; singleton:="true"
+       org.eclipse.mylyn.tasks.ui [334]
+         Unresolved requirement: Require-Bundle: org.eclipse.mylyn.commons.notifications.feed; bundle-version="1.0.0"
+           -> Bundle-SymbolicName: org.eclipse.mylyn.commons.notifications.feed; bundle-version="1.17.1.v20200511-1958"; singleton:="true"
+              org.eclipse.mylyn.commons.notifications.feed [302]
+                Unresolved requirement: Require-Bundle: com.sun.xml.bind; bundle-version="2.2.0"
+                  -> Bundle-SymbolicName: com.sun.xml.bind; bundle-version="2.3.3.v20201118-1818"
+                     com.sun.xml.bind [564]
+                       Unresolved requirement: Import-Package: com.sun.xml.fastinfoset.sax; resolution:="optional"
+                       Unresolved requirement: Import-Package: com.sun.xml.fastinfoset.stax; resolution:="optional"
+                       Unresolved requirement: Import-Package: org.jvnet.fastinfoset; resolution:="optional"
+                       Unresolved requirement: Import-Package: org.jvnet.fastinfoset.stax; resolution:="optional"
+                       Unresolved requirement: Import-Package: org.jvnet.staxex; resolution:="optional"
+                       Unresolved requirement: Import-Package: javax.activation; version="[1.2.0,2.0.0)"
+                         -> Export-Package: javax.activation; bundle-symbolic-name="javax.activation"; bundle-version="1.2.2.v20201119-1642"; version="1.2.2"
+                            javax.activation [567]
+                              Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=9.0))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.mylyn.wikitext.tasks.ui 4 0 2021-07-16 09:13:50.472
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.wikitext.tasks.ui [352]
+  Unresolved requirement: Require-Bundle: org.eclipse.mylyn.tasks.ui; bundle-version="3.7.0"
+    -> Bundle-SymbolicName: org.eclipse.mylyn.tasks.ui; bundle-version="3.25.1.v20200512-0316"; singleton:="true"
+       org.eclipse.mylyn.tasks.ui [334]
+         Unresolved requirement: Require-Bundle: org.eclipse.mylyn.commons.notifications.feed; bundle-version="1.0.0"
+           -> Bundle-SymbolicName: org.eclipse.mylyn.commons.notifications.feed; bundle-version="1.17.1.v20200511-1958"; singleton:="true"
+              org.eclipse.mylyn.commons.notifications.feed [302]
+                Unresolved requirement: Require-Bundle: com.sun.xml.bind; bundle-version="2.2.0"
+                  -> Bundle-SymbolicName: com.sun.xml.bind; bundle-version="2.3.3.v20201118-1818"
+                     com.sun.xml.bind [564]
+                       Unresolved requirement: Import-Package: com.sun.xml.fastinfoset.sax; resolution:="optional"
+                       Unresolved requirement: Import-Package: com.sun.xml.fastinfoset.stax; resolution:="optional"
+                       Unresolved requirement: Import-Package: org.jvnet.fastinfoset; resolution:="optional"
+                       Unresolved requirement: Import-Package: org.jvnet.fastinfoset.stax; resolution:="optional"
+                       Unresolved requirement: Import-Package: org.jvnet.staxex; resolution:="optional"
+                       Unresolved requirement: Import-Package: javax.activation; version="[1.2.0,2.0.0)"
+                         -> Export-Package: javax.activation; bundle-symbolic-name="javax.activation"; bundle-version="1.2.2.v20201119-1642"; version="1.2.2"
+                            javax.activation [567]
+                              Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=9.0))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.cdt.core.native 4 0 2021-07-16 09:13:50.737
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.cdt.core.native [592]
+  Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.php.composer.ui 4 0 2021-07-16 09:13:50.757
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.php.composer.ui [872]
+  Unresolved requirement: Require-Bundle: org.eclipse.tm.terminal.view.core
+    -> Bundle-SymbolicName: org.eclipse.tm.terminal.view.core; bundle-version="4.7.0.202008310315"; singleton:="true"
+       org.eclipse.tm.terminal.view.core [893]
+         Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+  Unresolved requirement: Require-Bundle: org.eclipse.tm.terminal.connector.process
+    -> Bundle-SymbolicName: org.eclipse.tm.terminal.connector.process; bundle-version="4.7.0.202008310315"; singleton:="true"
+       org.eclipse.tm.terminal.connector.process [891]
+         Unresolved requirement: Import-Package: org.eclipse.cdt.utils.pty; mandatory:="native"
+           -> Export-Package: org.eclipse.cdt.utils.pty; bundle-symbolic-name="org.eclipse.cdt.core.native"; bundle-version="6.1.0.202011181638"; version="5.7.0"
+              org.eclipse.cdt.core.native [592]
+                Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+         Unresolved requirement: Import-Package: org.eclipse.cdt.utils.spawner; mandatory:="native"
+           -> Export-Package: org.eclipse.cdt.utils.spawner; bundle-symbolic-name="org.eclipse.cdt.core.native"; bundle-version="6.1.0.202011181638"; version="5.7.0"
+  Unresolved requirement: Require-Bundle: org.eclipse.tm.terminal.control
+    -> Bundle-SymbolicName: org.eclipse.tm.terminal.control; bundle-version="5.0.0.202009071350"; singleton:="true"
+       org.eclipse.tm.terminal.control [892]
+         Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+  Unresolved requirement: Require-Bundle: org.eclipse.tm.terminal.view.ui
+    -> Bundle-SymbolicName: org.eclipse.tm.terminal.view.ui; bundle-version="4.7.100.202011241127"; singleton:="true"
+       org.eclipse.tm.terminal.view.ui [894]
+         Unresolved requirement: Require-Bundle: org.eclipse.tm.terminal.view.core; bundle-version="4.5.0"
+           -> Bundle-SymbolicName: org.eclipse.tm.terminal.view.core; bundle-version="4.7.0.202008310315"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.tm.terminal.connector.process 4 0 2021-07-16 09:13:50.767
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.tm.terminal.connector.process [891]
+  Unresolved requirement: Import-Package: org.eclipse.cdt.utils.pty; mandatory:="native"
+    -> Export-Package: org.eclipse.cdt.utils.pty; bundle-symbolic-name="org.eclipse.cdt.core.native"; bundle-version="6.1.0.202011181638"; version="5.7.0"
+       org.eclipse.cdt.core.native [592]
+         Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+  Unresolved requirement: Import-Package: org.eclipse.cdt.utils.spawner; mandatory:="native"
+    -> Export-Package: org.eclipse.cdt.utils.spawner; bundle-symbolic-name="org.eclipse.cdt.core.native"; bundle-version="6.1.0.202011181638"; version="5.7.0"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.tm.terminal.control 4 0 2021-07-16 09:13:50.767
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.tm.terminal.control [892]
+  Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.tm.terminal.view.core 4 0 2021-07-16 09:13:50.767
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.tm.terminal.view.core [893]
+  Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.tm.terminal.view.ui 4 0 2021-07-16 09:13:50.775
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.tm.terminal.view.ui [894]
+  Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+  Unresolved requirement: Require-Bundle: org.eclipse.tm.terminal.control; bundle-version="4.5.0"
+    -> Bundle-SymbolicName: org.eclipse.tm.terminal.control; bundle-version="5.0.0.202009071350"; singleton:="true"
+       org.eclipse.tm.terminal.control [892]
+         Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+  Unresolved requirement: Require-Bundle: org.eclipse.tm.terminal.view.core; bundle-version="4.5.0"
+    -> Bundle-SymbolicName: org.eclipse.tm.terminal.view.core; bundle-version="4.7.0.202008310315"; singleton:="true"
+       org.eclipse.tm.terminal.view.core [893]
+         Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.jface 2 0 2021-07-16 09:13:59.639
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2021-07-16 09:13:59.639
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@6560f387,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@6a24c41d,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2021-07-16 09:13:59.639
+!MESSAGE A conflict occurred for ALT+SHIFT+X R:
+Binding(ALT+SHIFT+X R,
+	ParameterizedCommand(Command(org.eclipse.rap.tools.launch.RAPLaunchShortcut.run,Run RAP Application,
+		Run RAP Application,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@5315210d,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+X R,
+	ParameterizedCommand(Command(org.eclipse.wst.server.launchShortcut.run,Run on Server,
+		Run the current selection on a server,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@3f5f79d8,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2021-07-16 09:13:59.639
+!MESSAGE A conflict occurred for ALT+SHIFT+D R:
+Binding(ALT+SHIFT+D R,
+	ParameterizedCommand(Command(org.eclipse.rap.tools.launch.RAPLaunchShortcut.debug,Debug RAP Application,
+		Debug RAP Application,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@5dc1597f,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+D R,
+	ParameterizedCommand(Command(org.eclipse.wst.server.launchShortcut.debug,Debug on Server,
+		Debug the current selection on a server,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@11896af6,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2021-07-16 09:14:06.037
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\ASUS'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.ui.monitoring 4 0 2021-07-16 09:14:22.687
+!MESSAGE Did not encounter the UI thread in stack traces.
+
+!ENTRY org.eclipse.ui.monitoring 2 0 2021-07-16 09:14:22.687
+!MESSAGE UI freeze of 0.90s at 09:14:21.784
+!SUBENTRY 1 org.eclipse.ui.monitoring 1 0 2021-07-16 09:14:22.687
+!MESSAGE Sample at 09:14:22.125 (+0.341s)
+Thread 'main' tid=1 (TIMED_WAITING)
+!STACK 0
+Stack Trace
+	at java.lang.Thread.sleep(Native Method)
+	at org.eclipse.jdt.internal.launching.StandardVMType.generateLibraryInfo(StandardVMType.java:723)
+	at org.eclipse.jdt.internal.launching.StandardVMType.getLibraryInfo(StandardVMType.java:240)
+	at org.eclipse.jdt.internal.launching.StandardVMType.getVMVersion(StandardVMType.java:281)
+	at org.eclipse.jdt.internal.launching.Standard11xVMType.canDetectDefaultSystemLibraries(Standard11xVMType.java:101)
+	at org.eclipse.jdt.internal.launching.StandardVMType.getJavaHomeLocation(StandardVMType.java:340)
+	at org.eclipse.jdt.internal.launching.StandardVMType.detectInstallLocation(StandardVMType.java:294)
+	at org.eclipse.jdt.launching.JavaRuntime.detectEclipseRuntime(JavaRuntime.java:2227)
+	at org.eclipse.jdt.launching.JavaRuntime.initializeVMs(JavaRuntime.java:3219)
+	at org.eclipse.jdt.launching.JavaRuntime.getVMInstallTypes(JavaRuntime.java:570)
+	at org.eclipse.jst.common.project.facet.core.internal.JavaRuntimeBridge.getExportedRuntimeNames(JavaRuntimeBridge.java:41)
+	at org.eclipse.wst.common.project.facet.core.runtime.internal.RuntimeManagerImpl.bridge(RuntimeManagerImpl.java:402)
+	at org.eclipse.wst.common.project.facet.core.runtime.internal.RuntimeManagerImpl.getRuntimes(RuntimeManagerImpl.java:154)
+	at org.eclipse.wst.common.project.facet.core.runtime.RuntimeManager.getRuntimes(RuntimeManager.java:81)
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProjectWorkingCopy.refreshTargetableRuntimes(FacetedProjectWorkingCopy.java:1143)
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProjectWorkingCopy.<init>(FacetedProjectWorkingCopy.java:191)
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProjectFrameworkImpl.createNewProject(FacetedProjectFrameworkImpl.java:662)
+	at org.eclipse.wst.common.project.facet.core.FacetedProjectFramework.createNewProject(FacetedProjectFramework.java:63)
+	at org.eclipse.wst.common.project.facet.ui.ModifyFacetedProjectWizard.<init>(ModifyFacetedProjectWizard.java:87)
+	at org.eclipse.wst.common.project.facet.ui.ModifyFacetedProjectWizard.<init>(ModifyFacetedProjectWizard.java:81)
+	at org.eclipse.wst.web.ui.internal.wizards.NewProjectDataModelFacetWizard.<init>(NewProjectDataModelFacetWizard.java:73)
+	at org.eclipse.wst.web.ui.internal.wizards.NewProjectDataModelFacetWizard.<init>(NewProjectDataModelFacetWizard.java:86)
+	at org.eclipse.jst.servlet.ui.project.facet.WebProjectWizard.<init>(WebProjectWizard.java:38)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:204)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:923)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:246)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:63)
+	at org.eclipse.ui.internal.WorkbenchPlugin.lambda$0(WorkbenchPlugin.java:287)
+	at org.eclipse.ui.internal.WorkbenchPlugin$$Lambda$342/175126836.run(Unknown Source)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:72)
+	at org.eclipse.ui.internal.WorkbenchPlugin.createExtension(WorkbenchPlugin.java:285)
+	at org.eclipse.ui.internal.dialogs.WorkbenchWizardElement.createExecutableExtension(WorkbenchWizardElement.java:125)
+	at org.eclipse.ui.internal.dialogs.WorkbenchWizardElement.createWizard(WorkbenchWizardElement.java:254)
+	at org.eclipse.ui.internal.dialogs.NewWizardNewPage$2.createWizard(NewWizardNewPage.java:691)
+	at org.eclipse.ui.internal.dialogs.WorkbenchWizardNode$1.run(WorkbenchWizardNode.java:137)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.internal.dialogs.WorkbenchWizardNode.lambda$0(WorkbenchWizardNode.java:122)
+	at org.eclipse.ui.internal.dialogs.WorkbenchWizardNode$$Lambda$594/1443373883.run(Unknown Source)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:72)
+	at org.eclipse.ui.internal.dialogs.WorkbenchWizardNode.getWizard(WorkbenchWizardNode.java:122)
+	at org.eclipse.jface.wizard.WizardSelectionPage.getNextPage(WizardSelectionPage.java:110)
+	at org.eclipse.ui.internal.dialogs.WorkbenchWizardSelectionPage.getNextPage(WorkbenchWizardSelectionPage.java:98)
+	at org.eclipse.jface.wizard.WizardDialog.nextPressed(WizardDialog.java:910)
+	at org.eclipse.jface.wizard.WizardDialog.buttonPressed(WizardDialog.java:468)
+	at org.eclipse.jface.dialogs.Dialog.lambda$0(Dialog.java:619)
+	at org.eclipse.jface.dialogs.Dialog$$Lambda$100/267400033.accept(Unknown Source)
+	at org.eclipse.swt.events.SelectionListener$1.widgetSelected(SelectionListener.java:84)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:252)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4213)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1037)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4030)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3630)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:823)
+	at org.eclipse.jface.window.Window.open(Window.java:799)
+	at org.eclipse.ui.internal.handlers.WizardHandler$New.executeHandler(WizardHandler.java:260)
+	at org.eclipse.ui.internal.handlers.WizardHandler.execute(WizardHandler.java:280)
+	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:283)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:97)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:319)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:253)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:173)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.execute(HandlerServiceHandler.java:156)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:488)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:487)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:213)
+	at org.eclipse.ui.internal.handlers.LegacyHandlerService.executeCommand(LegacyHandlerService.java:389)
+	at org.eclipse.ui.internal.actions.CommandAction.runWithEvent(CommandAction.java:142)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:579)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$4(ActionContributionItem.java:413)
+	at org.eclipse.jface.action.ActionContributionItem$$Lambda$331/1142388059.handleEvent(Unknown Source)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4213)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1037)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4030)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3630)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1158)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1047)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:658)
+	at org.eclipse.ui.internal.Workbench$$Lambda$113/34644587.run(Unknown Source)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:557)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:154)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:150)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1447)
+!SUBENTRY 1 org.eclipse.ui.monitoring 1 0 2021-07-16 09:14:22.687
+!MESSAGE Sample at 09:14:22.517 (+0.392s)
+Thread 'Process monitor' tid=79 (RUNNABLE)
+!STACK 0
+Stack Trace
+	at java.lang.ProcessImpl.waitForInterruptibly(Native Method)
+	at java.lang.ProcessImpl.waitFor(Unknown Source)
+	at org.eclipse.debug.core.model.RuntimeProcess$ProcessMonitorThread.run(RuntimeProcess.java:445)
+!SUBENTRY 2 org.eclipse.ui.monitoring 1 0 2021-07-16 09:14:22.687
+!MESSAGE Thread 'Input Stream Monitor' tid=78 (WAITING)
+Waiting for: java.lang.Object@22876fbf
+!STACK 0
+Stack Trace
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Unknown Source)
+	at org.eclipse.debug.internal.core.InputStreamMonitor.writeNext(InputStreamMonitor.java:172)
+	at org.eclipse.debug.internal.core.InputStreamMonitor.write(InputStreamMonitor.java:138)
+	at org.eclipse.debug.internal.core.InputStreamMonitor$$Lambda$597/366407905.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+!SUBENTRY 2 org.eclipse.ui.monitoring 1 0 2021-07-16 09:14:22.687
+!MESSAGE Thread 'Output Stream Monitor' tid=77 (RUNNABLE)
+!STACK 0
+Stack Trace
+	at java.io.FileInputStream.readBytes(Native Method)
+	at java.io.FileInputStream.read(Unknown Source)
+	at java.io.BufferedInputStream.read1(Unknown Source)
+	at java.io.BufferedInputStream.read(Unknown Source)
+	at sun.nio.cs.StreamDecoder.readBytes(Unknown Source)
+	at sun.nio.cs.StreamDecoder.implRead(Unknown Source)
+	at sun.nio.cs.StreamDecoder.read(Unknown Source)
+	at java.io.InputStreamReader.read(Unknown Source)
+	at java.io.Reader.read(Unknown Source)
+	at org.eclipse.debug.internal.core.OutputStreamMonitor.internalRead(OutputStreamMonitor.java:173)
+	at org.eclipse.debug.internal.core.OutputStreamMonitor.read(OutputStreamMonitor.java:148)
+	at org.eclipse.debug.internal.core.OutputStreamMonitor$$Lambda$596/1139689794.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+!SUBENTRY 2 org.eclipse.ui.monitoring 1 0 2021-07-16 09:14:22.687
+!MESSAGE Thread 'Output Stream Monitor' tid=76 (RUNNABLE)
+!STACK 0
+Stack Trace
+	at java.io.FileInputStream.readBytes(Native Method)
+	at java.io.FileInputStream.read(Unknown Source)
+	at java.io.BufferedInputStream.read1(Unknown Source)
+	at java.io.BufferedInputStream.read(Unknown Source)
+	at java.io.BufferedInputStream.read1(Unknown Source)
+	at java.io.BufferedInputStream.read(Unknown Source)
+	at sun.nio.cs.StreamDecoder.readBytes(Unknown Source)
+	at sun.nio.cs.StreamDecoder.implRead(Unknown Source)
+	at sun.nio.cs.StreamDecoder.read(Unknown Source)
+	at java.io.InputStreamReader.read(Unknown Source)
+	at java.io.Reader.read(Unknown Source)
+	at org.eclipse.debug.internal.core.OutputStreamMonitor.internalRead(OutputStreamMonitor.java:173)
+	at org.eclipse.debug.internal.core.OutputStreamMonitor.read(OutputStreamMonitor.java:148)
+	at org.eclipse.debug.internal.core.OutputStreamMonitor$$Lambda$596/1139689794.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+!SUBENTRY 2 org.eclipse.ui.monitoring 1 0 2021-07-16 09:14:22.687
+!MESSAGE Thread 'PHP Debugger Daemon Thread  - Port: 10137' tid=51 (RUNNABLE)
+!STACK 0
+Stack Trace
+	at java.net.DualStackPlainSocketImpl.accept0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketAccept(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.accept(Unknown Source)
+	at java.net.PlainSocketImpl.accept(Unknown Source)
+	at java.net.ServerSocket.implAccept(Unknown Source)
+	at java.net.ServerSocket.accept(Unknown Source)
+	at org.eclipse.php.internal.debug.core.daemon.AbstractDebuggerCommunicationDaemon$ReceiverThread.run(AbstractDebuggerCommunicationDaemon.java:212)
+	at java.lang.Thread.run(Unknown Source)
+!SUBENTRY 2 org.eclipse.ui.monitoring 1 0 2021-07-16 09:14:22.687
+!MESSAGE Thread 'PHP Debugger Daemon Thread  - Port: 20080' tid=50 (RUNNABLE)
+!STACK 0
+Stack Trace
+	at java.net.DualStackPlainSocketImpl.accept0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketAccept(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.accept(Unknown Source)
+	at java.net.PlainSocketImpl.accept(Unknown Source)
+	at java.net.ServerSocket.implAccept(Unknown Source)
+	at java.net.ServerSocket.accept(Unknown Source)
+	at org.eclipse.php.internal.debug.core.daemon.AbstractDebuggerCommunicationDaemon$ReceiverThread.run(AbstractDebuggerCommunicationDaemon.java:212)
+	at java.lang.Thread.run(Unknown Source)
+!SUBENTRY 2 org.eclipse.ui.monitoring 1 0 2021-07-16 09:14:22.687
+!MESSAGE Thread 'PHP Debugger Daemon Thread  - Port: 2077' tid=49 (RUNNABLE)
+!STACK 0
+Stack Trace
+	at java.net.DualStackPlainSocketImpl.accept0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketAccept(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.accept(Unknown Source)
+	at java.net.PlainSocketImpl.accept(Unknown Source)
+	at java.net.ServerSocket.implAccept(Unknown Source)
+	at java.net.ServerSocket.accept(Unknown Source)
+	at org.eclipse.php.internal.debug.core.daemon.AbstractDebuggerCommunicationDaemon$ReceiverThread.run(AbstractDebuggerCommunicationDaemon.java:212)
+	at java.lang.Thread.run(Unknown Source)
+!SUBENTRY 2 org.eclipse.ui.monitoring 1 0 2021-07-16 09:14:22.687
+!MESSAGE Thread 'DLTK indexing' tid=45 (WAITING)
+Waiting for: org.eclipse.dltk.core.search.indexing.IndexManager@3ee881d4
+!STACK 0
+Stack Trace
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Unknown Source)
+	at org.eclipse.dltk.internal.core.search.processing.JobManager.run(JobManager.java:398)
+	at java.lang.Thread.run(Unknown Source)
+!SUBENTRY 2 org.eclipse.ui.monitoring 1 0 2021-07-16 09:14:22.687
+!MESSAGE Thread 'Java indexing' tid=33 (WAITING)
+Waiting for: org.eclipse.jdt.internal.core.search.indexing.IndexManager@6eed7783
+!STACK 0
+Stack Trace
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Unknown Source)
+	at org.eclipse.jdt.internal.core.search.processing.JobManager.run(JobManager.java:378)
+	at java.lang.Thread.run(Unknown Source)
+!SUBENTRY 2 org.eclipse.ui.monitoring 1 0 2021-07-16 09:14:22.687
+!MESSAGE Thread 'Git Repository Closer' tid=29 (WAITING)
+Waiting for: java.lang.ref.ReferenceQueue$Lock@6e719886
+!STACK 0
+Stack Trace
+	at java.lang.Object.wait(Native Method)
+	at java.lang.ref.ReferenceQueue.remove(Unknown Source)
+	at java.lang.ref.ReferenceQueue.remove(Unknown Source)
+	at org.eclipse.egit.core.RepositoryCache$Closer.run(RepositoryCache.java:463)
+!SUBENTRY 2 org.eclipse.ui.monitoring 1 0 2021-07-16 09:14:22.687
+!MESSAGE Thread 'EMF Reference Cleaner' tid=20 (WAITING)
+Waiting for: java.lang.ref.ReferenceQueue$Lock@037c26d4
+!STACK 0
+Stack Trace
+	at java.lang.Object.wait(Native Method)
+	at java.lang.ref.ReferenceQueue.remove(Unknown Source)
+	at java.lang.ref.ReferenceQueue.remove(Unknown Source)
+	at org.eclipse.emf.common.util.CommonUtil$1ReferenceClearingQueuePollingThread.run(CommonUtil.java:70)
+!SUBENTRY 2 org.eclipse.ui.monitoring 1 0 2021-07-16 09:14:22.687
+!MESSAGE Thread 'Worker-JM' tid=19 (WAITING)
+Waiting for: java.util.ArrayList@7d7af4bc
+!STACK 0
+Stack Trace
+	at java.lang.Object.wait(Native Method)
+	at org.eclipse.core.internal.jobs.InternalWorker.run(InternalWorker.java:61)
+!SUBENTRY 2 org.eclipse.ui.monitoring 1 0 2021-07-16 09:14:22.687
+!MESSAGE Thread 'SCR Component Actor' tid=17 (WAITING)
+Waiting for: java.util.LinkedList@61b45c4a
+!STACK 0
+Stack Trace
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Unknown Source)
+	at org.apache.felix.scr.impl.ComponentActorThread.run(ComponentActorThread.java:83)
+	at java.lang.Thread.run(Unknown Source)
+!SUBENTRY 2 org.eclipse.ui.monitoring 1 0 2021-07-16 09:14:22.687
+!MESSAGE Thread 'Process monitor' tid=79 (RUNNABLE)
+!STACK 0
+Stack Trace
+	at java.lang.ProcessImpl.waitForInterruptibly(Native Method)
+	at java.lang.ProcessImpl.waitFor(Unknown Source)
+	at org.eclipse.debug.core.model.RuntimeProcess$ProcessMonitorThread.run(RuntimeProcess.java:445)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2021-07-16 09:20:46.894
+!MESSAGE Connection to http://jope.ow2.org/update/jope/site.xml failed on jope.ow2.org. Retry attempt 0 started
+!STACK 0
+java.net.UnknownHostException: jope.ow2.org
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(Unknown Source)
+	at java.net.InetAddress.getAddressesFromNameService(Unknown Source)
+	at java.net.InetAddress.getAllByName0(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:112)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:374)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1003)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:995)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:991)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:76)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2021-07-16 09:20:47.109
+!MESSAGE Connection to http://jope.ow2.org/update/jope/p2.index failed on jope.ow2.org. Retry attempt 0 started
+!STACK 0
+java.net.UnknownHostException: jope.ow2.org
+	at java.net.InetAddress.getAllByName0(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:112)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:374)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1003)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:995)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:991)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:76)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.ui.monitoring 4 0 2021-07-16 09:22:58.613
+!MESSAGE Did not encounter the UI thread in stack traces.
+
+!ENTRY org.eclipse.ui.monitoring 4 0 2021-07-16 09:22:58.614
+!MESSAGE Did not encounter the UI thread in stack traces.
+
+!ENTRY org.eclipse.ui.monitoring 4 0 2021-07-16 09:22:58.614
+!MESSAGE Did not encounter the UI thread in stack traces.
+
+!ENTRY org.eclipse.ui.monitoring 4 0 2021-07-16 09:22:58.617
+!MESSAGE UI freeze of 3.8s at 09:22:54.828
+!SUBENTRY 1 org.eclipse.ui.monitoring 1 0 2021-07-16 09:22:58.617
+!MESSAGE Sample at 09:22:56.467 (+1.639s)
+Thread 'org.eclipse.wst.sse.ui.internal.reconcile.StructuredRegionProcessor' tid=176 (TIMED_WAITING)
+!STACK 0
+Stack Trace
+	at java.lang.Object.wait(Native Method)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DirtyRegionProcessor$BackgroundThread.run(DirtyRegionProcessor.java:670)
+!SUBENTRY 2 org.eclipse.ui.monitoring 1 0 2021-07-16 09:22:58.617
+!MESSAGE Thread 'Process monitor' tid=173 (RUNNABLE)
+!STACK 0
+Stack Trace
+	at java.lang.ProcessImpl.waitForInterruptibly(Native Method)
+	at java.lang.ProcessImpl.waitFor(Unknown Source)
+	at org.eclipse.debug.core.model.RuntimeProcess$ProcessMonitorThread.run(RuntimeProcess.java:445)
+!SUBENTRY 2 org.eclipse.ui.monitoring 1 0 2021-07-16 09:22:58.617
+!MESSAGE Thread 'Input Stream Monitor' tid=172 (WAITING)
+Waiting for: java.lang.Object@4f15b6f6
+!STACK 0
+Stack Trace
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Unknown Source)
+	at org.eclipse.debug.internal.core.InputStreamMonitor.writeNext(InputStreamMonitor.java:172)
+	at org.eclipse.debug.internal.core.InputStreamMonitor.write(InputStreamMonitor.java:138)
+	at org.eclipse.debug.internal.core.InputStreamMonitor$$Lambda$597/366407905.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+!SUBENTRY 2 org.eclipse.ui.monitoring 1 0 2021-07-16 09:22:58.617
+!MESSAGE Thread 'Output Stream Monitor' tid=171 (RUNNABLE)
+!STACK 0
+Stack Trace
+	at java.io.FileInputStream.readBytes(Native Method)
+	at java.io.FileInputStream.read(Unknown Source)
+	at java.io.BufferedInputStream.read1(Unknown Source)
+	at java.io.BufferedInputStream.read(Unknown Source)
+	at sun.nio.cs.StreamDecoder.readBytes(Unknown Source)
+	at sun.nio.cs.StreamDecoder.implRead(Unknown Source)
+	at sun.nio.cs.StreamDecoder.read(Unknown Source)
+	at java.io.InputStreamReader.read(Unknown Source)
+	at java.io.Reader.read(Unknown Source)
+	at org.eclipse.debug.internal.core.OutputStreamMonitor.internalRead(OutputStreamMonitor.java:173)
+	at org.eclipse.debug.internal.core.OutputStreamMonitor.read(OutputStreamMonitor.java:148)
+	at org.eclipse.debug.internal.core.OutputStreamMonitor$$Lambda$596/1139689794.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+!SUBENTRY 2 org.eclipse.ui.monitoring 1 0 2021-07-16 09:22:58.617
+!MESSAGE Thread 'Output Stream Monitor' tid=170 (RUNNABLE)
+!STACK 0
+Stack Trace
+	at java.io.FileInputStream.readBytes(Native Method)
+	at java.io.FileInputStream.read(Unknown Source)
+	at java.io.BufferedInputStream.read1(Unknown Source)
+	at java.io.BufferedInputStream.read(Unknown Source)
+	at java.io.BufferedInputStream.read1(Unknown Source)
+	at java.io.BufferedInputStream.read(Unknown Source)
+	at sun.nio.cs.StreamDecoder.readBytes(Unknown Source)
+	at sun.nio.cs.StreamDecoder.implRead(Unknown Source)
+	at sun.nio.cs.StreamDecoder.read(Unknown Source)
+	at java.io.InputStreamReader.read(Unknown Source)
+	at java.io.Reader.read(Unknown Source)
+	at org.eclipse.debug.internal.core.OutputStreamMonitor.internalRead(OutputStreamMonitor.java:173)
+	at org.eclipse.debug.internal.core.OutputStreamMonitor.read(OutputStreamMonitor.java:148)
+	at org.eclipse.debug.internal.core.OutputStreamMonitor$$Lambda$596/1139689794.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+!SUBENTRY 2 org.eclipse.ui.monitoring 1 0 2021-07-16 09:22:58.618
+!MESSAGE Thread 'JavaScript indexing' tid=83 (WAITING)
+Waiting for: org.eclipse.wst.jsdt.internal.core.search.indexing.IndexManager@718b430a
+!STACK 0
+Stack Trace
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Unknown Source)
+	at org.eclipse.wst.jsdt.internal.core.search.processing.JobManager.run(JobManager.java:370)
+	at java.lang.Thread.run(Unknown Source)
+!SUBENTRY 2 org.eclipse.ui.monitoring 1 0 2021-07-16 09:22:58.618
+!MESSAGE Thread 'Thread-11' tid=81 (TIMED_WAITING)
+!STACK 0
+Stack Trace
+	at java.lang.Thread.sleep(Native Method)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker$UpdateCheckThread.run(UpdateChecker.java:73)
+!SUBENTRY 2 org.eclipse.ui.monitoring 1 0 2021-07-16 09:22:58.618
+!MESSAGE Thread 'Worker-24: Process Console Input Job' tid=66 (WAITING)
+Waiting for: org.eclipse.ui.console.IOConsoleInputStream@167bd27e
+!STACK 0
+Stack Trace
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Unknown Source)
+	at org.eclipse.ui.console.IOConsoleInputStream.waitForData(IOConsoleInputStream.java:141)
+	at org.eclipse.ui.console.IOConsoleInputStream.read(IOConsoleInputStream.java:92)
+	at sun.nio.cs.StreamDecoder.readBytes(Unknown Source)
+	at sun.nio.cs.StreamDecoder.implRead(Unknown Source)
+	at sun.nio.cs.StreamDecoder.read(Unknown Source)
+	at java.io.InputStreamReader.read(Unknown Source)
+	at java.io.Reader.read(Unknown Source)
+	at org.eclipse.debug.internal.ui.views.console.ProcessConsole$InputReadJob.run(ProcessConsole.java:862)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 2 org.eclipse.ui.monitoring 1 0 2021-07-16 09:22:58.618
+!MESSAGE Thread 'PHP Debugger Daemon Thread  - Port: 10137' tid=51 (RUNNABLE)
+!STACK 0
+Stack Trace
+	at java.net.DualStackPlainSocketImpl.accept0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketAccept(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.accept(Unknown Source)
+	at java.net.PlainSocketImpl.accept(Unknown Source)
+	at java.net.ServerSocket.implAccept(Unknown Source)
+	at java.net.ServerSocket.accept(Unknown Source)
+	at org.eclipse.php.internal.debug.core.daemon.AbstractDebuggerCommunicationDaemon$ReceiverThread.run(AbstractDebuggerCommunicationDaemon.java:212)
+	at java.lang.Thread.run(Unknown Source)
+!SUBENTRY 2 org.eclipse.ui.monitoring 1 0 2021-07-16 09:22:58.618
+!MESSAGE Thread 'PHP Debugger Daemon Thread  - Port: 20080' tid=50 (RUNNABLE)
+!STACK 0
+Stack Trace
+	at java.net.DualStackPlainSocketImpl.accept0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketAccept(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.accept(Unknown Source)
+	at java.net.PlainSocketImpl.accept(Unknown Source)
+	at java.net.ServerSocket.implAccept(Unknown Source)
+	at java.net.ServerSocket.accept(Unknown Source)
+	at org.eclipse.php.internal.debug.core.daemon.AbstractDebuggerCommunicationDaemon$ReceiverThread.run(AbstractDebuggerCommunicationDaemon.java:212)
+	at java.lang.Thread.run(Unknown Source)
+!SUBENTRY 2 org.eclipse.ui.monitoring 1 0 2021-07-16 09:22:58.618
+!MESSAGE Thread 'PHP Debugger Daemon Thread  - Port: 2077' tid=49 (RUNNABLE)
+!STACK 0
+Stack Trace
+	at java.net.DualStackPlainSocketImpl.accept0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketAccept(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.accept(Unknown Source)
+	at java.net.PlainSocketImpl.accept(Unknown Source)
+	at java.net.ServerSocket.implAccept(Unknown Source)
+	at java.net.ServerSocket.accept(Unknown Source)
+	at org.eclipse.php.internal.debug.core.daemon.AbstractDebuggerCommunicationDaemon$ReceiverThread.run(AbstractDebuggerCommunicationDaemon.java:212)
+	at java.lang.Thread.run(Unknown Source)
+!SUBENTRY 2 org.eclipse.ui.monitoring 1 0 2021-07-16 09:22:58.618
+!MESSAGE Thread 'DLTK indexing' tid=45 (WAITING)
+Waiting for: org.eclipse.dltk.core.search.indexing.IndexManager@3ee881d4
+!STACK 0
+Stack Trace
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Unknown Source)
+	at org.eclipse.dltk.internal.core.search.processing.JobManager.run(JobManager.java:398)
+	at java.lang.Thread.run(Unknown Source)
+!SUBENTRY 2 org.eclipse.ui.monitoring 1 0 2021-07-16 09:22:58.618
+!MESSAGE Thread 'Worker-10: File Transport Cancel Handler' tid=44 (TIMED_WAITING)
+!STACK 0
+Stack Trace
+	at java.lang.Thread.sleep(Native Method)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileReader$CancelHandler.run(FileReader.java:158)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 2 org.eclipse.ui.monitoring 1 0 2021-07-16 09:22:58.618
+!MESSAGE Thread 'Worker-4: Initialize Language Servers for web.xml' tid=38 (RUNNABLE)
+Holding: java.util.concurrent.locks.ReentrantLock$NonfairSync@5c2e92d8
+!STACK 0
+Stack Trace
+	at java.io.WinNTFileSystem.getBooleanAttributes(Native Method)
+	at java.io.File.exists(Unknown Source)
+	at org.eclipse.osgi.framework.util.SecureAction.exists(SecureAction.java:241)
+	at org.eclipse.osgi.storage.bundlefile.DirBundleFile.getFile(DirBundleFile.java:55)
+	at org.eclipse.osgi.storage.bundlefile.DirBundleFile.getEntry(DirBundleFile.java:111)
+	at org.eclipse.osgi.storage.bundlefile.BundleFile.getResourceURL(BundleFile.java:139)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathEntry.findResource(ClasspathEntry.java:213)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalResources(ClasspathManager.java:468)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalResources(ClasspathManager.java:454)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalResources(ModuleClassLoader.java:342)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalResources(BundleLoader.java:893)
+	at org.eclipse.osgi.internal.loader.sources.SingleSourcePackage.getResources(SingleSourcePackage.java:51)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findResources(BundleLoader.java:745)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.getResources(ModuleClassLoader.java:251)
+	at java.lang.ClassLoader.getResources(Unknown Source)
+	at org.codehaus.plexus.classworlds.realm.ClassRealm.getResources(ClassRealm.java:323)
+	at org.eclipse.sisu.space.URLClassSpace.getResources(URLClassSpace.java:165)
+	at org.eclipse.sisu.space.IndexedClassFinder.indexedNames(IndexedClassFinder.java:76)
+	at org.eclipse.sisu.space.IndexedClassFinder.findClasses(IndexedClassFinder.java:118)
+	at org.eclipse.sisu.space.SpaceScanner.accept(SpaceScanner.java:72)
+	at org.eclipse.sisu.space.SpaceModule.scanForElements(SpaceModule.java:168)
+	at org.eclipse.sisu.space.SpaceModule.configure(SpaceModule.java:129)
+	at org.eclipse.sisu.plexus.PlexusAnnotatedBeanModule.configure(PlexusAnnotatedBeanModule.java:102)
+	at org.eclipse.sisu.plexus.PlexusBindingModule.configure(PlexusBindingModule.java:63)
+	at com.google.inject.spi.Elements$RecordingBinder.install(Elements.java:344)
+	at com.google.inject.spi.Elements.getElements(Elements.java:103)
+	at com.google.inject.spi.Elements.getElements(Elements.java:96)
+	at org.eclipse.sisu.wire.WireModule.configure(WireModule.java:75)
+	at com.google.inject.spi.Elements$RecordingBinder.install(Elements.java:344)
+	at com.google.inject.spi.Elements.getElements(Elements.java:103)
+	at com.google.inject.internal.InjectorShell$Builder.build(InjectorShell.java:137)
+	at com.google.inject.internal.InternalInjectorCreator.build(InternalInjectorCreator.java:103)
+	at com.google.inject.Guice.createInjector(Guice.java:87)
+	at com.google.inject.Guice.createInjector(Guice.java:69)
+	at com.google.inject.Guice.createInjector(Guice.java:59)
+	at org.codehaus.plexus.DefaultPlexusContainer.addPlexusInjector(DefaultPlexusContainer.java:481)
+	at org.codehaus.plexus.DefaultPlexusContainer.<init>(DefaultPlexusContainer.java:206)
+	at org.eclipse.m2e.core.internal.MavenPluginActivator.newPlexusContainer(MavenPluginActivator.java:299)
+	at org.eclipse.m2e.core.internal.MavenPluginActivator.start(MavenPluginActivator.java:216)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:843)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:835)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:792)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1015)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:365)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:605)
+	at org.eclipse.osgi.container.Module.start(Module.java:468)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:493)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:117)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:571)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:346)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:398)
+	at org.eclipse.osgi.internal.loader.sources.SingleSourcePackage.loadClass(SingleSourcePackage.java:41)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:456)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:171)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.m2e.editor.lemminx.MavenRuntimeClasspathProvider.<init>(MavenRuntimeClasspathProvider.java:38)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:204)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:923)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:246)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:63)
+	at org.eclipse.wildwebdeveloper.xml.internal.XMLExtensionRegistry.getRegisteredClassPathProviders(XMLExtensionRegistry.java:92)
+	at org.eclipse.wildwebdeveloper.xml.internal.XMLExtensionRegistry.getXMLLSClassPathExtensions(XMLExtensionRegistry.java:75)
+	at org.eclipse.wildwebdeveloper.xml.internal.XMLLanguageServer.getExtensionJarPaths(XMLLanguageServer.java:136)
+	at org.eclipse.wildwebdeveloper.xml.internal.XMLLanguageServer.<init>(XMLLanguageServer.java:76)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:204)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:923)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:246)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:63)
+	at org.eclipse.lsp4e.LanguageServersRegistry$ExtensionLanguageServerDefinition.createConnectionProvider(LanguageServersRegistry.java:124)
+	at org.eclipse.lsp4e.LanguageServerWrapper.start(LanguageServerWrapper.java:211)
+	at org.eclipse.lsp4e.LanguageServerWrapper.getInitializedServer(LanguageServerWrapper.java:667)
+	at org.eclipse.lsp4e.LanguageServiceAccessor.lambda$14(LanguageServiceAccessor.java:589)
+	at org.eclipse.lsp4e.LanguageServiceAccessor$$Lambda$868/386778712.apply(Unknown Source)
+	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.util.Iterator.forEachRemaining(Unknown Source)
+	at java.util.Spliterators$IteratorSpliterator.forEachRemaining(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.util.stream.AbstractPipeline.evaluateToArrayNode(Unknown Source)
+	at java.util.stream.ReferencePipeline.toArray(Unknown Source)
+	at org.eclipse.lsp4e.LanguageServiceAccessor.getLanguageServers(LanguageServiceAccessor.java:602)
+	at org.eclipse.lsp4e.ConnectDocumentToLanguageServerSetupParticipant$2.run(ConnectDocumentToLanguageServerSetupParticipant.java:75)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 2 org.eclipse.ui.monitoring 1 0 2021-07-16 09:22:58.619
+!MESSAGE Thread 'Worker-2: File Transport Cancel Handler' tid=36 (TIMED_WAITING)
+!STACK 0
+Stack Trace
+	at java.lang.Thread.sleep(Native Method)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileReader$CancelHandler.run(FileReader.java:158)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 2 org.eclipse.ui.monitoring 1 0 2021-07-16 09:22:58.619
+!MESSAGE Thread 'Java indexing' tid=33 (WAITING)
+Waiting for: org.eclipse.jdt.internal.core.search.indexing.IndexManager@6eed7783
+!STACK 0
+Stack Trace
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Unknown Source)
+	at org.eclipse.jdt.internal.core.search.processing.JobManager.run(JobManager.java:378)
+	at java.lang.Thread.run(Unknown Source)
+!SUBENTRY 2 org.eclipse.ui.monitoring 1 0 2021-07-16 09:22:58.619
+!MESSAGE Thread 'Git Repository Closer' tid=29 (WAITING)
+Waiting for: java.lang.ref.ReferenceQueue$Lock@6e719886
+!STACK 0
+Stack Trace
+	at java.lang.Object.wait(Native Method)
+	at java.lang.ref.ReferenceQueue.remove(Unknown Source)
+	at java.lang.ref.ReferenceQueue.remove(Unknown Source)
+	at org.eclipse.egit.core.RepositoryCache$Closer.run(RepositoryCache.java:463)
+!SUBENTRY 2 org.eclipse.ui.monitoring 1 0 2021-07-16 09:22:58.619
+!MESSAGE Thread 'EMF Reference Cleaner' tid=20 (WAITING)
+Waiting for: java.lang.ref.ReferenceQueue$Lock@037c26d4
+!STACK 0
+Stack Trace
+	at java.lang.Object.wait(Native Method)
+	at java.lang.ref.ReferenceQueue.remove(Unknown Source)
+	at java.lang.ref.ReferenceQueue.remove(Unknown Source)
+	at org.eclipse.emf.common.util.CommonUtil$1ReferenceClearingQueuePollingThread.run(CommonUtil.java:70)
+!SUBENTRY 2 org.eclipse.ui.monitoring 1 0 2021-07-16 09:22:58.619
+!MESSAGE Thread 'Worker-JM' tid=19 (WAITING)
+Waiting for: java.util.ArrayList@7d7af4bc
+!STACK 0
+Stack Trace
+	at java.lang.Object.wait(Native Method)
+	at org.eclipse.core.internal.jobs.InternalWorker.run(InternalWorker.java:61)
+!SUBENTRY 2 org.eclipse.ui.monitoring 1 0 2021-07-16 09:22:58.619
+!MESSAGE Thread 'SCR Component Actor' tid=17 (WAITING)
+Waiting for: java.util.LinkedList@61b45c4a
+!STACK 0
+Stack Trace
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Unknown Source)
+	at org.apache.felix.scr.impl.ComponentActorThread.run(ComponentActorThread.java:83)
+	at java.lang.Thread.run(Unknown Source)
+!SUBENTRY 2 org.eclipse.ui.monitoring 1 0 2021-07-16 09:22:58.619
+!MESSAGE Thread 'org.eclipse.wst.sse.ui.internal.reconcile.StructuredRegionProcessor' tid=176 (TIMED_WAITING)
+Waiting for: java.util.Collections$SynchronizedRandomAccessList@2ee7bd50
+!STACK 0
+Stack Trace
+	at java.lang.Object.wait(Native Method)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DirtyRegionProcessor$BackgroundThread.run(DirtyRegionProcessor.java:670)
+!SUBENTRY 1 org.eclipse.ui.monitoring 1 0 2021-07-16 09:22:58.619
+!MESSAGE Sample at 09:22:57.292 (+0.825s)
+Thread 'org.eclipse.wst.sse.ui.internal.reconcile.StructuredRegionProcessor' tid=176 (TIMED_WAITING)
+!STACK 0
+Stack Trace
+	at java.lang.Object.wait(Native Method)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DirtyRegionProcessor$BackgroundThread.run(DirtyRegionProcessor.java:670)
+!SUBENTRY 2 org.eclipse.ui.monitoring 1 0 2021-07-16 09:22:58.619
+!MESSAGE Thread 'Process monitor' tid=173 (RUNNABLE)
+!STACK 0
+Stack Trace
+	at java.lang.ProcessImpl.waitForInterruptibly(Native Method)
+	at java.lang.ProcessImpl.waitFor(Unknown Source)
+	at org.eclipse.debug.core.model.RuntimeProcess$ProcessMonitorThread.run(RuntimeProcess.java:445)
+!SUBENTRY 2 org.eclipse.ui.monitoring 1 0 2021-07-16 09:22:58.619
+!MESSAGE Thread 'Input Stream Monitor' tid=172 (WAITING)
+Waiting for: java.lang.Object@4f15b6f6
+!STACK 0
+Stack Trace
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Unknown Source)
+	at org.eclipse.debug.internal.core.InputStreamMonitor.writeNext(InputStreamMonitor.java:172)
+	at org.eclipse.debug.internal.core.InputStreamMonitor.write(InputStreamMonitor.java:138)
+	at org.eclipse.debug.internal.core.InputStreamMonitor$$Lambda$597/366407905.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+!SUBENTRY 2 org.eclipse.ui.monitoring 1 0 2021-07-16 09:22:58.619
+!MESSAGE Thread 'Output Stream Monitor' tid=171 (RUNNABLE)
+!STACK 0
+Stack Trace
+	at java.io.FileInputStream.readBytes(Native Method)
+	at java.io.FileInputStream.read(Unknown Source)
+	at java.io.BufferedInputStream.read1(Unknown Source)
+	at java.io.BufferedInputStream.read(Unknown Source)
+	at sun.nio.cs.StreamDecoder.readBytes(Unknown Source)
+	at sun.nio.cs.StreamDecoder.implRead(Unknown Source)
+	at sun.nio.cs.StreamDecoder.read(Unknown Source)
+	at java.io.InputStreamReader.read(Unknown Source)
+	at java.io.Reader.read(Unknown Source)
+	at org.eclipse.debug.internal.core.OutputStreamMonitor.internalRead(OutputStreamMonitor.java:173)
+	at org.eclipse.debug.internal.core.OutputStreamMonitor.read(OutputStreamMonitor.java:148)
+	at org.eclipse.debug.internal.core.OutputStreamMonitor$$Lambda$596/1139689794.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+!SUBENTRY 2 org.eclipse.ui.monitoring 1 0 2021-07-16 09:22:58.619
+!MESSAGE Thread 'Output Stream Monitor' tid=170 (RUNNABLE)
+!STACK 0
+Stack Trace
+	at java.io.FileInputStream.readBytes(Native Method)
+	at java.io.FileInputStream.read(Unknown Source)
+	at java.io.BufferedInputStream.read1(Unknown Source)
+	at java.io.BufferedInputStream.read(Unknown Source)
+	at java.io.BufferedInputStream.read1(Unknown Source)
+	at java.io.BufferedInputStream.read(Unknown Source)
+	at sun.nio.cs.StreamDecoder.readBytes(Unknown Source)
+	at sun.nio.cs.StreamDecoder.implRead(Unknown Source)
+	at sun.nio.cs.StreamDecoder.read(Unknown Source)
+	at java.io.InputStreamReader.read(Unknown Source)
+	at java.io.Reader.read(Unknown Source)
+	at org.eclipse.debug.internal.core.OutputStreamMonitor.internalRead(OutputStreamMonitor.java:173)
+	at org.eclipse.debug.internal.core.OutputStreamMonitor.read(OutputStreamMonitor.java:148)
+	at org.eclipse.debug.internal.core.OutputStreamMonitor$$Lambda$596/1139689794.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+!SUBENTRY 2 org.eclipse.ui.monitoring 1 0 2021-07-16 09:22:58.619
+!MESSAGE Thread 'JavaScript indexing' tid=83 (WAITING)
+Waiting for: org.eclipse.wst.jsdt.internal.core.search.indexing.IndexManager@718b430a
+!STACK 0
+Stack Trace
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Unknown Source)
+	at org.eclipse.wst.jsdt.internal.core.search.processing.JobManager.run(JobManager.java:370)
+	at java.lang.Thread.run(Unknown Source)
+!SUBENTRY 2 org.eclipse.ui.monitoring 1 0 2021-07-16 09:22:58.619
+!MESSAGE Thread 'Thread-11' tid=81 (TIMED_WAITING)
+!STACK 0
+Stack Trace
+	at java.lang.Thread.sleep(Native Method)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker$UpdateCheckThread.run(UpdateChecker.java:73)
+!SUBENTRY 2 org.eclipse.ui.monitoring 1 0 2021-07-16 09:22:58.619
+!MESSAGE Thread 'Worker-24: Process Console Input Job' tid=66 (WAITING)
+Waiting for: org.eclipse.ui.console.IOConsoleInputStream@167bd27e
+!STACK 0
+Stack Trace
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Unknown Source)
+	at org.eclipse.ui.console.IOConsoleInputStream.waitForData(IOConsoleInputStream.java:141)
+	at org.eclipse.ui.console.IOConsoleInputStream.read(IOConsoleInputStream.java:92)
+	at sun.nio.cs.StreamDecoder.readBytes(Unknown Source)
+	at sun.nio.cs.StreamDecoder.implRead(Unknown Source)
+	at sun.nio.cs.StreamDecoder.read(Unknown Source)
+	at java.io.InputStreamReader.read(Unknown Source)
+	at java.io.Reader.read(Unknown Source)
+	at org.eclipse.debug.internal.ui.views.console.ProcessConsole$InputReadJob.run(ProcessConsole.java:862)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 2 org.eclipse.ui.monitoring 1 0 2021-07-16 09:22:58.619
+!MESSAGE Thread 'PHP Debugger Daemon Thread  - Port: 10137' tid=51 (RUNNABLE)
+!STACK 0
+Stack Trace
+	at java.net.DualStackPlainSocketImpl.accept0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketAccept(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.accept(Unknown Source)
+	at java.net.PlainSocketImpl.accept(Unknown Source)
+	at java.net.ServerSocket.implAccept(Unknown Source)
+	at java.net.ServerSocket.accept(Unknown Source)
+	at org.eclipse.php.internal.debug.core.daemon.AbstractDebuggerCommunicationDaemon$ReceiverThread.run(AbstractDebuggerCommunicationDaemon.java:212)
+	at java.lang.Thread.run(Unknown Source)
+!SUBENTRY 2 org.eclipse.ui.monitoring 1 0 2021-07-16 09:22:58.620
+!MESSAGE Thread 'PHP Debugger Daemon Thread  - Port: 20080' tid=50 (RUNNABLE)
+!STACK 0
+Stack Trace
+	at java.net.DualStackPlainSocketImpl.accept0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketAccept(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.accept(Unknown Source)
+	at java.net.PlainSocketImpl.accept(Unknown Source)
+	at java.net.ServerSocket.implAccept(Unknown Source)
+	at java.net.ServerSocket.accept(Unknown Source)
+	at org.eclipse.php.internal.debug.core.daemon.AbstractDebuggerCommunicationDaemon$ReceiverThread.run(AbstractDebuggerCommunicationDaemon.java:212)
+	at java.lang.Thread.run(Unknown Source)
+!SUBENTRY 2 org.eclipse.ui.monitoring 1 0 2021-07-16 09:22:58.620
+!MESSAGE Thread 'PHP Debugger Daemon Thread  - Port: 2077' tid=49 (RUNNABLE)
+!STACK 0
+Stack Trace
+	at java.net.DualStackPlainSocketImpl.accept0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketAccept(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.accept(Unknown Source)
+	at java.net.PlainSocketImpl.accept(Unknown Source)
+	at java.net.ServerSocket.implAccept(Unknown Source)
+	at java.net.ServerSocket.accept(Unknown Source)
+	at org.eclipse.php.internal.debug.core.daemon.AbstractDebuggerCommunicationDaemon$ReceiverThread.run(AbstractDebuggerCommunicationDaemon.java:212)
+	at java.lang.Thread.run(Unknown Source)
+!SUBENTRY 2 org.eclipse.ui.monitoring 1 0 2021-07-16 09:22:58.620
+!MESSAGE Thread 'DLTK indexing' tid=45 (WAITING)
+Waiting for: org.eclipse.dltk.core.search.indexing.IndexManager@3ee881d4
+!STACK 0
+Stack Trace
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Unknown Source)
+	at org.eclipse.dltk.internal.core.search.processing.JobManager.run(JobManager.java:398)
+	at java.lang.Thread.run(Unknown Source)
+!SUBENTRY 2 org.eclipse.ui.monitoring 1 0 2021-07-16 09:22:58.620
+!MESSAGE Thread 'Worker-10: File Transport Cancel Handler' tid=44 (TIMED_WAITING)
+!STACK 0
+Stack Trace
+	at java.lang.Thread.sleep(Native Method)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileReader$CancelHandler.run(FileReader.java:158)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 2 org.eclipse.ui.monitoring 1 0 2021-07-16 09:22:58.620
+!MESSAGE Thread 'Worker-4: Initialize Language Servers for web.xml' tid=38 (RUNNABLE)
+!STACK 0
+Stack Trace
+	at java.lang.ProcessImpl.create(Native Method)
+	at java.lang.ProcessImpl.<init>(Unknown Source)
+	at java.lang.ProcessImpl.start(Unknown Source)
+	at java.lang.ProcessBuilder.start(Unknown Source)
+	at org.eclipse.lsp4e.server.ProcessStreamConnectionProvider.start(ProcessStreamConnectionProvider.java:54)
+	at org.eclipse.lsp4e.LanguageServerWrapper.start(LanguageServerWrapper.java:213)
+	at org.eclipse.lsp4e.LanguageServerWrapper.getInitializedServer(LanguageServerWrapper.java:667)
+	at org.eclipse.lsp4e.LanguageServiceAccessor.lambda$14(LanguageServiceAccessor.java:589)
+	at org.eclipse.lsp4e.LanguageServiceAccessor$$Lambda$868/386778712.apply(Unknown Source)
+	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.util.Iterator.forEachRemaining(Unknown Source)
+	at java.util.Spliterators$IteratorSpliterator.forEachRemaining(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.util.stream.AbstractPipeline.evaluateToArrayNode(Unknown Source)
+	at java.util.stream.ReferencePipeline.toArray(Unknown Source)
+	at org.eclipse.lsp4e.LanguageServiceAccessor.getLanguageServers(LanguageServiceAccessor.java:602)
+	at org.eclipse.lsp4e.ConnectDocumentToLanguageServerSetupParticipant$2.run(ConnectDocumentToLanguageServerSetupParticipant.java:75)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 2 org.eclipse.ui.monitoring 1 0 2021-07-16 09:22:58.620
+!MESSAGE Thread 'Worker-2: File Transport Cancel Handler' tid=36 (TIMED_WAITING)
+!STACK 0
+Stack Trace
+	at java.lang.Thread.sleep(Native Method)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileReader$CancelHandler.run(FileReader.java:158)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 2 org.eclipse.ui.monitoring 1 0 2021-07-16 09:22:58.620
+!MESSAGE Thread 'Java indexing' tid=33 (WAITING)
+Waiting for: org.eclipse.jdt.internal.core.search.indexing.IndexManager@6eed7783
+!STACK 0
+Stack Trace
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Unknown Source)
+	at org.eclipse.jdt.internal.core.search.processing.JobManager.run(JobManager.java:378)
+	at java.lang.Thread.run(Unknown Source)
+!SUBENTRY 2 org.eclipse.ui.monitoring 1 0 2021-07-16 09:22:58.620
+!MESSAGE Thread 'Git Repository Closer' tid=29 (WAITING)
+Waiting for: java.lang.ref.ReferenceQueue$Lock@6e719886
+!STACK 0
+Stack Trace
+	at java.lang.Object.wait(Native Method)
+	at java.lang.ref.ReferenceQueue.remove(Unknown Source)
+	at java.lang.ref.ReferenceQueue.remove(Unknown Source)
+	at org.eclipse.egit.core.RepositoryCache$Closer.run(RepositoryCache.java:463)
+!SUBENTRY 2 org.eclipse.ui.monitoring 1 0 2021-07-16 09:22:58.620
+!MESSAGE Thread 'EMF Reference Cleaner' tid=20 (WAITING)
+Waiting for: java.lang.ref.ReferenceQueue$Lock@037c26d4
+!STACK 0
+Stack Trace
+	at java.lang.Object.wait(Native Method)
+	at java.lang.ref.ReferenceQueue.remove(Unknown Source)
+	at java.lang.ref.ReferenceQueue.remove(Unknown Source)
+	at org.eclipse.emf.common.util.CommonUtil$1ReferenceClearingQueuePollingThread.run(CommonUtil.java:70)
+!SUBENTRY 2 org.eclipse.ui.monitoring 1 0 2021-07-16 09:22:58.620
+!MESSAGE Thread 'Worker-JM' tid=19 (WAITING)
+Waiting for: java.util.ArrayList@7d7af4bc
+!STACK 0
+Stack Trace
+	at java.lang.Object.wait(Native Method)
+	at org.eclipse.core.internal.jobs.InternalWorker.run(InternalWorker.java:61)
+!SUBENTRY 2 org.eclipse.ui.monitoring 1 0 2021-07-16 09:22:58.620
+!MESSAGE Thread 'SCR Component Actor' tid=17 (WAITING)
+Waiting for: java.util.LinkedList@61b45c4a
+!STACK 0
+Stack Trace
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Unknown Source)
+	at org.apache.felix.scr.impl.ComponentActorThread.run(ComponentActorThread.java:83)
+	at java.lang.Thread.run(Unknown Source)
+!SUBENTRY 2 org.eclipse.ui.monitoring 1 0 2021-07-16 09:22:58.620
+!MESSAGE Thread 'org.eclipse.wst.sse.ui.internal.reconcile.StructuredRegionProcessor' tid=176 (TIMED_WAITING)
+Waiting for: java.util.Collections$SynchronizedRandomAccessList@2ee7bd50
+!STACK 0
+Stack Trace
+	at java.lang.Object.wait(Native Method)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DirtyRegionProcessor$BackgroundThread.run(DirtyRegionProcessor.java:670)
+!SUBENTRY 1 org.eclipse.ui.monitoring 1 0 2021-07-16 09:22:58.620
+!MESSAGE Sample at 09:22:57.751 (+0.459s)
+Thread 'org.eclipse.wst.sse.ui.internal.reconcile.StructuredRegionProcessor' tid=176 (TIMED_WAITING)
+!STACK 0
+Stack Trace
+	at java.lang.Object.wait(Native Method)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DirtyRegionProcessor$BackgroundThread.run(DirtyRegionProcessor.java:670)
+!SUBENTRY 2 org.eclipse.ui.monitoring 1 0 2021-07-16 09:22:58.620
+!MESSAGE Thread 'Process monitor' tid=173 (RUNNABLE)
+!STACK 0
+Stack Trace
+	at java.lang.ProcessImpl.waitForInterruptibly(Native Method)
+	at java.lang.ProcessImpl.waitFor(Unknown Source)
+	at org.eclipse.debug.core.model.RuntimeProcess$ProcessMonitorThread.run(RuntimeProcess.java:445)
+!SUBENTRY 2 org.eclipse.ui.monitoring 1 0 2021-07-16 09:22:58.620
+!MESSAGE Thread 'Input Stream Monitor' tid=172 (WAITING)
+Waiting for: java.lang.Object@4f15b6f6
+!STACK 0
+Stack Trace
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Unknown Source)
+	at org.eclipse.debug.internal.core.InputStreamMonitor.writeNext(InputStreamMonitor.java:172)
+	at org.eclipse.debug.internal.core.InputStreamMonitor.write(InputStreamMonitor.java:138)
+	at org.eclipse.debug.internal.core.InputStreamMonitor$$Lambda$597/366407905.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+!SUBENTRY 2 org.eclipse.ui.monitoring 1 0 2021-07-16 09:22:58.620
+!MESSAGE Thread 'Output Stream Monitor' tid=171 (RUNNABLE)
+!STACK 0
+Stack Trace
+	at java.io.FileInputStream.readBytes(Native Method)
+	at java.io.FileInputStream.read(Unknown Source)
+	at java.io.BufferedInputStream.read1(Unknown Source)
+	at java.io.BufferedInputStream.read(Unknown Source)
+	at sun.nio.cs.StreamDecoder.readBytes(Unknown Source)
+	at sun.nio.cs.StreamDecoder.implRead(Unknown Source)
+	at sun.nio.cs.StreamDecoder.read(Unknown Source)
+	at java.io.InputStreamReader.read(Unknown Source)
+	at java.io.Reader.read(Unknown Source)
+	at org.eclipse.debug.internal.core.OutputStreamMonitor.internalRead(OutputStreamMonitor.java:173)
+	at org.eclipse.debug.internal.core.OutputStreamMonitor.read(OutputStreamMonitor.java:148)
+	at org.eclipse.debug.internal.core.OutputStreamMonitor$$Lambda$596/1139689794.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+!SUBENTRY 2 org.eclipse.ui.monitoring 1 0 2021-07-16 09:22:58.620
+!MESSAGE Thread 'Output Stream Monitor' tid=170 (RUNNABLE)
+!STACK 0
+Stack Trace
+	at java.io.FileInputStream.readBytes(Native Method)
+	at java.io.FileInputStream.read(Unknown Source)
+	at java.io.BufferedInputStream.read1(Unknown Source)
+	at java.io.BufferedInputStream.read(Unknown Source)
+	at java.io.BufferedInputStream.read1(Unknown Source)
+	at java.io.BufferedInputStream.read(Unknown Source)
+	at sun.nio.cs.StreamDecoder.readBytes(Unknown Source)
+	at sun.nio.cs.StreamDecoder.implRead(Unknown Source)
+	at sun.nio.cs.StreamDecoder.read(Unknown Source)
+	at java.io.InputStreamReader.read(Unknown Source)
+	at java.io.Reader.read(Unknown Source)
+	at org.eclipse.debug.internal.core.OutputStreamMonitor.internalRead(OutputStreamMonitor.java:173)
+	at org.eclipse.debug.internal.core.OutputStreamMonitor.read(OutputStreamMonitor.java:148)
+	at org.eclipse.debug.internal.core.OutputStreamMonitor$$Lambda$596/1139689794.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+!SUBENTRY 2 org.eclipse.ui.monitoring 1 0 2021-07-16 09:22:58.620
+!MESSAGE Thread 'JavaScript indexing' tid=83 (WAITING)
+Waiting for: org.eclipse.wst.jsdt.internal.core.search.indexing.IndexManager@718b430a
+!STACK 0
+Stack Trace
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Unknown Source)
+	at org.eclipse.wst.jsdt.internal.core.search.processing.JobManager.run(JobManager.java:370)
+	at java.lang.Thread.run(Unknown Source)
+!SUBENTRY 2 org.eclipse.ui.monitoring 1 0 2021-07-16 09:22:58.620
+!MESSAGE Thread 'Thread-11' tid=81 (TIMED_WAITING)
+!STACK 0
+Stack Trace
+	at java.lang.Thread.sleep(Native Method)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker$UpdateCheckThread.run(UpdateChecker.java:73)
+!SUBENTRY 2 org.eclipse.ui.monitoring 1 0 2021-07-16 09:22:58.620
+!MESSAGE Thread 'Worker-24: Process Console Input Job' tid=66 (WAITING)
+Waiting for: org.eclipse.ui.console.IOConsoleInputStream@167bd27e
+!STACK 0
+Stack Trace
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Unknown Source)
+	at org.eclipse.ui.console.IOConsoleInputStream.waitForData(IOConsoleInputStream.java:141)
+	at org.eclipse.ui.console.IOConsoleInputStream.read(IOConsoleInputStream.java:92)
+	at sun.nio.cs.StreamDecoder.readBytes(Unknown Source)
+	at sun.nio.cs.StreamDecoder.implRead(Unknown Source)
+	at sun.nio.cs.StreamDecoder.read(Unknown Source)
+	at java.io.InputStreamReader.read(Unknown Source)
+	at java.io.Reader.read(Unknown Source)
+	at org.eclipse.debug.internal.ui.views.console.ProcessConsole$InputReadJob.run(ProcessConsole.java:862)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 2 org.eclipse.ui.monitoring 1 0 2021-07-16 09:22:58.620
+!MESSAGE Thread 'PHP Debugger Daemon Thread  - Port: 10137' tid=51 (RUNNABLE)
+!STACK 0
+Stack Trace
+	at java.net.DualStackPlainSocketImpl.accept0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketAccept(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.accept(Unknown Source)
+	at java.net.PlainSocketImpl.accept(Unknown Source)
+	at java.net.ServerSocket.implAccept(Unknown Source)
+	at java.net.ServerSocket.accept(Unknown Source)
+	at org.eclipse.php.internal.debug.core.daemon.AbstractDebuggerCommunicationDaemon$ReceiverThread.run(AbstractDebuggerCommunicationDaemon.java:212)
+	at java.lang.Thread.run(Unknown Source)
+!SUBENTRY 2 org.eclipse.ui.monitoring 1 0 2021-07-16 09:22:58.620
+!MESSAGE Thread 'PHP Debugger Daemon Thread  - Port: 20080' tid=50 (RUNNABLE)
+!STACK 0
+Stack Trace
+	at java.net.DualStackPlainSocketImpl.accept0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketAccept(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.accept(Unknown Source)
+	at java.net.PlainSocketImpl.accept(Unknown Source)
+	at java.net.ServerSocket.implAccept(Unknown Source)
+	at java.net.ServerSocket.accept(Unknown Source)
+	at org.eclipse.php.internal.debug.core.daemon.AbstractDebuggerCommunicationDaemon$ReceiverThread.run(AbstractDebuggerCommunicationDaemon.java:212)
+	at java.lang.Thread.run(Unknown Source)
+!SUBENTRY 2 org.eclipse.ui.monitoring 1 0 2021-07-16 09:22:58.620
+!MESSAGE Thread 'PHP Debugger Daemon Thread  - Port: 2077' tid=49 (RUNNABLE)
+!STACK 0
+Stack Trace
+	at java.net.DualStackPlainSocketImpl.accept0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketAccept(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.accept(Unknown Source)
+	at java.net.PlainSocketImpl.accept(Unknown Source)
+	at java.net.ServerSocket.implAccept(Unknown Source)
+	at java.net.ServerSocket.accept(Unknown Source)
+	at org.eclipse.php.internal.debug.core.daemon.AbstractDebuggerCommunicationDaemon$ReceiverThread.run(AbstractDebuggerCommunicationDaemon.java:212)
+	at java.lang.Thread.run(Unknown Source)
+!SUBENTRY 2 org.eclipse.ui.monitoring 1 0 2021-07-16 09:22:58.621
+!MESSAGE Thread 'DLTK indexing' tid=45 (WAITING)
+Waiting for: org.eclipse.dltk.core.search.indexing.IndexManager@3ee881d4
+!STACK 0
+Stack Trace
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Unknown Source)
+	at org.eclipse.dltk.internal.core.search.processing.JobManager.run(JobManager.java:398)
+	at java.lang.Thread.run(Unknown Source)
+!SUBENTRY 2 org.eclipse.ui.monitoring 1 0 2021-07-16 09:22:58.621
+!MESSAGE Thread 'Worker-10: File Transport Cancel Handler' tid=44 (TIMED_WAITING)
+!STACK 0
+Stack Trace
+	at java.lang.Thread.sleep(Native Method)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileReader$CancelHandler.run(FileReader.java:158)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 2 org.eclipse.ui.monitoring 1 0 2021-07-16 09:22:58.621
+!MESSAGE Thread 'Worker-4: Initialize Language Servers for web.xml' tid=38 (RUNNABLE)
+!STACK 0
+Stack Trace
+	at java.lang.ProcessImpl.create(Native Method)
+	at java.lang.ProcessImpl.<init>(Unknown Source)
+	at java.lang.ProcessImpl.start(Unknown Source)
+	at java.lang.ProcessBuilder.start(Unknown Source)
+	at org.eclipse.lsp4e.server.ProcessStreamConnectionProvider.start(ProcessStreamConnectionProvider.java:54)
+	at org.eclipse.lsp4e.LanguageServerWrapper.start(LanguageServerWrapper.java:213)
+	at org.eclipse.lsp4e.LanguageServerWrapper.getInitializedServer(LanguageServerWrapper.java:667)
+	at org.eclipse.lsp4e.LanguageServiceAccessor.lambda$14(LanguageServiceAccessor.java:589)
+	at org.eclipse.lsp4e.LanguageServiceAccessor$$Lambda$868/386778712.apply(Unknown Source)
+	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.util.Iterator.forEachRemaining(Unknown Source)
+	at java.util.Spliterators$IteratorSpliterator.forEachRemaining(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.util.stream.AbstractPipeline.evaluateToArrayNode(Unknown Source)
+	at java.util.stream.ReferencePipeline.toArray(Unknown Source)
+	at org.eclipse.lsp4e.LanguageServiceAccessor.getLanguageServers(LanguageServiceAccessor.java:602)
+	at org.eclipse.lsp4e.ConnectDocumentToLanguageServerSetupParticipant$2.run(ConnectDocumentToLanguageServerSetupParticipant.java:75)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 2 org.eclipse.ui.monitoring 1 0 2021-07-16 09:22:58.621
+!MESSAGE Thread 'Worker-2: File Transport Cancel Handler' tid=36 (TIMED_WAITING)
+!STACK 0
+Stack Trace
+	at java.lang.Thread.sleep(Native Method)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileReader$CancelHandler.run(FileReader.java:158)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 2 org.eclipse.ui.monitoring 1 0 2021-07-16 09:22:58.621
+!MESSAGE Thread 'Java indexing' tid=33 (WAITING)
+Waiting for: org.eclipse.jdt.internal.core.search.indexing.IndexManager@6eed7783
+!STACK 0
+Stack Trace
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Unknown Source)
+	at org.eclipse.jdt.internal.core.search.processing.JobManager.run(JobManager.java:378)
+	at java.lang.Thread.run(Unknown Source)
+!SUBENTRY 2 org.eclipse.ui.monitoring 1 0 2021-07-16 09:22:58.621
+!MESSAGE Thread 'Git Repository Closer' tid=29 (WAITING)
+Waiting for: java.lang.ref.ReferenceQueue$Lock@6e719886
+!STACK 0
+Stack Trace
+	at java.lang.Object.wait(Native Method)
+	at java.lang.ref.ReferenceQueue.remove(Unknown Source)
+	at java.lang.ref.ReferenceQueue.remove(Unknown Source)
+	at org.eclipse.egit.core.RepositoryCache$Closer.run(RepositoryCache.java:463)
+!SUBENTRY 2 org.eclipse.ui.monitoring 1 0 2021-07-16 09:22:58.621
+!MESSAGE Thread 'EMF Reference Cleaner' tid=20 (WAITING)
+Waiting for: java.lang.ref.ReferenceQueue$Lock@037c26d4
+!STACK 0
+Stack Trace
+	at java.lang.Object.wait(Native Method)
+	at java.lang.ref.ReferenceQueue.remove(Unknown Source)
+	at java.lang.ref.ReferenceQueue.remove(Unknown Source)
+	at org.eclipse.emf.common.util.CommonUtil$1ReferenceClearingQueuePollingThread.run(CommonUtil.java:70)
+!SUBENTRY 2 org.eclipse.ui.monitoring 1 0 2021-07-16 09:22:58.621
+!MESSAGE Thread 'Worker-JM' tid=19 (WAITING)
+Waiting for: java.util.ArrayList@7d7af4bc
+!STACK 0
+Stack Trace
+	at java.lang.Object.wait(Native Method)
+	at org.eclipse.core.internal.jobs.InternalWorker.run(InternalWorker.java:61)
+!SUBENTRY 2 org.eclipse.ui.monitoring 1 0 2021-07-16 09:22:58.621
+!MESSAGE Thread 'SCR Component Actor' tid=17 (WAITING)
+Waiting for: java.util.LinkedList@61b45c4a
+!STACK 0
+Stack Trace
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Unknown Source)
+	at org.apache.felix.scr.impl.ComponentActorThread.run(ComponentActorThread.java:83)
+	at java.lang.Thread.run(Unknown Source)
+!SUBENTRY 2 org.eclipse.ui.monitoring 1 0 2021-07-16 09:22:58.621
+!MESSAGE Thread 'org.eclipse.wst.sse.ui.internal.reconcile.StructuredRegionProcessor' tid=176 (TIMED_WAITING)
+Waiting for: java.util.Collections$SynchronizedRandomAccessList@2ee7bd50
+!STACK 0
+Stack Trace
+	at java.lang.Object.wait(Native Method)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DirtyRegionProcessor$BackgroundThread.run(DirtyRegionProcessor.java:670)
+
+!ENTRY org.eclipse.lsp4e 4 0 2021-07-16 09:26:16.554
+!MESSAGE org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Internal error.
+!STACK 0
+java.util.concurrent.ExecutionException: org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Internal error.
+	at java.util.concurrent.CompletableFuture.reportGet(Unknown Source)
+	at java.util.concurrent.CompletableFuture.get(Unknown Source)
+	at org.eclipse.lsp4e.operations.declaration.OpenDeclarationHyperlinkDetector.detectHyperlinks(OpenDeclarationHyperlinkDetector.java:90)
+	at org.eclipse.ui.texteditor.HyperlinkDetectorRegistry$HyperlinkDetectorDelegate.detectHyperlinks(HyperlinkDetectorRegistry.java:81)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.findHyperlinks(HyperlinkManager.java:289)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.findHyperlinks(HyperlinkManager.java:262)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.mouseMove(HyperlinkManager.java:457)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:216)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4213)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1037)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4030)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3630)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1158)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1047)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:658)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:557)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:154)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:150)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1447)
+Caused by: org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Internal error.
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:209)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:193)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$1(LanguageServerWrapper.java:243)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+!SESSION 2021-07-16 09:40:21.258 -----------------------------------------------
+eclipse.buildId=4.16.0.I20200604-0540
+java.version=1.8.0_281
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=zh_CN
+Framework arguments:  -product org.eclipse.epp.package.committers.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.committers.product
+
+!ENTRY org.eclipse.egit.mylyn.ui 4 0 2021-07-16 09:40:23.077
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.egit.mylyn.ui [146]
+  Unresolved requirement: Require-Bundle: org.eclipse.mylyn.team.ui; bundle-version="[3.20.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.mylyn.team.ui; bundle-version="3.25.1.v20200512-2113"; singleton:="true"
+       org.eclipse.mylyn.team.ui [335]
+         Unresolved requirement: Require-Bundle: org.eclipse.mylyn.tasks.ui; bundle-version="[3.8.0,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.mylyn.tasks.ui; bundle-version="3.25.1.v20200512-0316"; singleton:="true"
+              org.eclipse.mylyn.tasks.ui [334]
+                Unresolved requirement: Require-Bundle: org.eclipse.mylyn.commons.notifications.feed; bundle-version="1.0.0"
+                  -> Bundle-SymbolicName: org.eclipse.mylyn.commons.notifications.feed; bundle-version="1.17.1.v20200511-1958"; singleton:="true"
+                     org.eclipse.mylyn.commons.notifications.feed [302]
+                       Unresolved requirement: Require-Bundle: com.sun.xml.bind; bundle-version="2.2.0"
+                         -> Bundle-SymbolicName: com.sun.xml.bind; bundle-version="2.3.3.v20201118-1818"
+                            com.sun.xml.bind [564]
+                              Unresolved requirement: Import-Package: com.sun.xml.fastinfoset.sax; resolution:="optional"
+                              Unresolved requirement: Import-Package: com.sun.xml.fastinfoset.stax; resolution:="optional"
+                              Unresolved requirement: Import-Package: org.jvnet.fastinfoset; resolution:="optional"
+                              Unresolved requirement: Import-Package: org.jvnet.fastinfoset.stax; resolution:="optional"
+                              Unresolved requirement: Import-Package: org.jvnet.staxex; resolution:="optional"
+                              Unresolved requirement: Import-Package: javax.activation; version="[1.2.0,2.0.0)"
+                                -> Export-Package: javax.activation; bundle-symbolic-name="javax.activation"; bundle-version="1.2.2.v20201119-1642"; version="1.2.2"
+                                   javax.activation [567]
+                                     Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=9.0))"
+  Unresolved requirement: Require-Bundle: org.eclipse.mylyn.tasks.ui; bundle-version="[3.20.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.mylyn.tasks.ui; bundle-version="3.25.1.v20200512-0316"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.mylyn.bugzilla.ui 4 0 2021-07-16 09:40:23.155
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.bugzilla.ui [295]
+  Unresolved requirement: Require-Bundle: org.eclipse.mylyn.tasks.ui; bundle-version="[3.8.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.mylyn.tasks.ui; bundle-version="3.25.1.v20200512-0316"; singleton:="true"
+       org.eclipse.mylyn.tasks.ui [334]
+         Unresolved requirement: Require-Bundle: org.eclipse.mylyn.commons.notifications.feed; bundle-version="1.0.0"
+           -> Bundle-SymbolicName: org.eclipse.mylyn.commons.notifications.feed; bundle-version="1.17.1.v20200511-1958"; singleton:="true"
+              org.eclipse.mylyn.commons.notifications.feed [302]
+                Unresolved requirement: Require-Bundle: com.sun.xml.bind; bundle-version="2.2.0"
+                  -> Bundle-SymbolicName: com.sun.xml.bind; bundle-version="2.3.3.v20201118-1818"
+                     com.sun.xml.bind [564]
+                       Unresolved requirement: Import-Package: com.sun.xml.fastinfoset.sax; resolution:="optional"
+                       Unresolved requirement: Import-Package: com.sun.xml.fastinfoset.stax; resolution:="optional"
+                       Unresolved requirement: Import-Package: org.jvnet.fastinfoset; resolution:="optional"
+                       Unresolved requirement: Import-Package: org.jvnet.fastinfoset.stax; resolution:="optional"
+                       Unresolved requirement: Import-Package: org.jvnet.staxex; resolution:="optional"
+                       Unresolved requirement: Import-Package: javax.activation; version="[1.2.0,2.0.0)"
+                         -> Export-Package: javax.activation; bundle-symbolic-name="javax.activation"; bundle-version="1.2.2.v20201119-1642"; version="1.2.2"
+                            javax.activation [567]
+                              Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=9.0))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.mylyn.builds.ui 4 0 2021-07-16 09:40:23.164
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.builds.ui [297]
+  Unresolved requirement: Require-Bundle: org.eclipse.mylyn.tasks.ui; bundle-version="3.8.0"
+    -> Bundle-SymbolicName: org.eclipse.mylyn.tasks.ui; bundle-version="3.25.1.v20200512-0316"; singleton:="true"
+       org.eclipse.mylyn.tasks.ui [334]
+         Unresolved requirement: Require-Bundle: org.eclipse.mylyn.commons.notifications.feed; bundle-version="1.0.0"
+           -> Bundle-SymbolicName: org.eclipse.mylyn.commons.notifications.feed; bundle-version="1.17.1.v20200511-1958"; singleton:="true"
+              org.eclipse.mylyn.commons.notifications.feed [302]
+                Unresolved requirement: Require-Bundle: com.sun.xml.bind; bundle-version="2.2.0"
+                  -> Bundle-SymbolicName: com.sun.xml.bind; bundle-version="2.3.3.v20201118-1818"
+                     com.sun.xml.bind [564]
+                       Unresolved requirement: Import-Package: com.sun.xml.fastinfoset.sax; resolution:="optional"
+                       Unresolved requirement: Import-Package: com.sun.xml.fastinfoset.stax; resolution:="optional"
+                       Unresolved requirement: Import-Package: org.jvnet.fastinfoset; resolution:="optional"
+                       Unresolved requirement: Import-Package: org.jvnet.fastinfoset.stax; resolution:="optional"
+                       Unresolved requirement: Import-Package: org.jvnet.staxex; resolution:="optional"
+                       Unresolved requirement: Import-Package: javax.activation; version="[1.2.0,2.0.0)"
+                         -> Export-Package: javax.activation; bundle-symbolic-name="javax.activation"; bundle-version="1.2.2.v20201119-1642"; version="1.2.2"
+                            javax.activation [567]
+                              Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=9.0))"
+  Unresolved requirement: Require-Bundle: org.eclipse.mylyn.team.ui; bundle-version="3.8.0"
+    -> Bundle-SymbolicName: org.eclipse.mylyn.team.ui; bundle-version="3.25.1.v20200512-2113"; singleton:="true"
+       org.eclipse.mylyn.team.ui [335]
+         Unresolved requirement: Require-Bundle: org.eclipse.mylyn.tasks.ui; bundle-version="[3.8.0,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.mylyn.tasks.ui; bundle-version="3.25.1.v20200512-0316"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.mylyn.commons.notifications.feed 4 0 2021-07-16 09:40:23.170
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.commons.notifications.feed [302]
+  Unresolved requirement: Require-Bundle: com.sun.xml.bind; bundle-version="2.2.0"
+    -> Bundle-SymbolicName: com.sun.xml.bind; bundle-version="2.3.3.v20201118-1818"
+       com.sun.xml.bind [564]
+         Unresolved requirement: Import-Package: com.sun.xml.fastinfoset.sax; resolution:="optional"
+         Unresolved requirement: Import-Package: com.sun.xml.fastinfoset.stax; resolution:="optional"
+         Unresolved requirement: Import-Package: org.jvnet.fastinfoset; resolution:="optional"
+         Unresolved requirement: Import-Package: org.jvnet.fastinfoset.stax; resolution:="optional"
+         Unresolved requirement: Import-Package: org.jvnet.staxex; resolution:="optional"
+         Unresolved requirement: Import-Package: javax.activation; version="[1.2.0,2.0.0)"
+           -> Export-Package: javax.activation; bundle-symbolic-name="javax.activation"; bundle-version="1.2.2.v20201119-1642"; version="1.2.2"
+              javax.activation [567]
+                Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=9.0))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.mylyn.context.tasks.ui 4 0 2021-07-16 09:40:23.177
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.context.tasks.ui [312]
+  Unresolved requirement: Require-Bundle: org.eclipse.mylyn.tasks.ui; bundle-version="3.8.0"
+    -> Bundle-SymbolicName: org.eclipse.mylyn.tasks.ui; bundle-version="3.25.1.v20200512-0316"; singleton:="true"
+       org.eclipse.mylyn.tasks.ui [334]
+         Unresolved requirement: Require-Bundle: org.eclipse.mylyn.commons.notifications.feed; bundle-version="1.0.0"
+           -> Bundle-SymbolicName: org.eclipse.mylyn.commons.notifications.feed; bundle-version="1.17.1.v20200511-1958"; singleton:="true"
+              org.eclipse.mylyn.commons.notifications.feed [302]
+                Unresolved requirement: Require-Bundle: com.sun.xml.bind; bundle-version="2.2.0"
+                  -> Bundle-SymbolicName: com.sun.xml.bind; bundle-version="2.3.3.v20201118-1818"
+                     com.sun.xml.bind [564]
+                       Unresolved requirement: Import-Package: com.sun.xml.fastinfoset.sax; resolution:="optional"
+                       Unresolved requirement: Import-Package: com.sun.xml.fastinfoset.stax; resolution:="optional"
+                       Unresolved requirement: Import-Package: org.jvnet.fastinfoset; resolution:="optional"
+                       Unresolved requirement: Import-Package: org.jvnet.fastinfoset.stax; resolution:="optional"
+                       Unresolved requirement: Import-Package: org.jvnet.staxex; resolution:="optional"
+                       Unresolved requirement: Import-Package: javax.activation; version="[1.2.0,2.0.0)"
+                         -> Export-Package: javax.activation; bundle-symbolic-name="javax.activation"; bundle-version="1.2.2.v20201119-1642"; version="1.2.2"
+                            javax.activation [567]
+                              Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=9.0))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.mylyn.gerrit.dashboard.ui 4 0 2021-07-16 09:40:23.182
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.gerrit.dashboard.ui [318]
+  Unresolved requirement: Require-Bundle: org.eclipse.mylyn.tasks.ui; bundle-version="3.11.0"
+    -> Bundle-SymbolicName: org.eclipse.mylyn.tasks.ui; bundle-version="3.25.1.v20200512-0316"; singleton:="true"
+       org.eclipse.mylyn.tasks.ui [334]
+         Unresolved requirement: Require-Bundle: org.eclipse.mylyn.commons.notifications.feed; bundle-version="1.0.0"
+           -> Bundle-SymbolicName: org.eclipse.mylyn.commons.notifications.feed; bundle-version="1.17.1.v20200511-1958"; singleton:="true"
+              org.eclipse.mylyn.commons.notifications.feed [302]
+                Unresolved requirement: Require-Bundle: com.sun.xml.bind; bundle-version="2.2.0"
+                  -> Bundle-SymbolicName: com.sun.xml.bind; bundle-version="2.3.3.v20201118-1818"
+                     com.sun.xml.bind [564]
+                       Unresolved requirement: Import-Package: com.sun.xml.fastinfoset.sax; resolution:="optional"
+                       Unresolved requirement: Import-Package: com.sun.xml.fastinfoset.stax; resolution:="optional"
+                       Unresolved requirement: Import-Package: org.jvnet.fastinfoset; resolution:="optional"
+                       Unresolved requirement: Import-Package: org.jvnet.fastinfoset.stax; resolution:="optional"
+                       Unresolved requirement: Import-Package: org.jvnet.staxex; resolution:="optional"
+                       Unresolved requirement: Import-Package: javax.activation; version="[1.2.0,2.0.0)"
+                         -> Export-Package: javax.activation; bundle-symbolic-name="javax.activation"; bundle-version="1.2.2.v20201119-1642"; version="1.2.2"
+                            javax.activation [567]
+                              Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=9.0))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.mylyn.gerrit.ui 4 0 2021-07-16 09:40:23.187
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.gerrit.ui [319]
+  Unresolved requirement: Require-Bundle: org.eclipse.mylyn.tasks.ui; bundle-version="3.8.0"
+    -> Bundle-SymbolicName: org.eclipse.mylyn.tasks.ui; bundle-version="3.25.1.v20200512-0316"; singleton:="true"
+       org.eclipse.mylyn.tasks.ui [334]
+         Unresolved requirement: Require-Bundle: org.eclipse.mylyn.commons.notifications.feed; bundle-version="1.0.0"
+           -> Bundle-SymbolicName: org.eclipse.mylyn.commons.notifications.feed; bundle-version="1.17.1.v20200511-1958"; singleton:="true"
+              org.eclipse.mylyn.commons.notifications.feed [302]
+                Unresolved requirement: Require-Bundle: com.sun.xml.bind; bundle-version="2.2.0"
+                  -> Bundle-SymbolicName: com.sun.xml.bind; bundle-version="2.3.3.v20201118-1818"
+                     com.sun.xml.bind [564]
+                       Unresolved requirement: Import-Package: com.sun.xml.fastinfoset.sax; resolution:="optional"
+                       Unresolved requirement: Import-Package: com.sun.xml.fastinfoset.stax; resolution:="optional"
+                       Unresolved requirement: Import-Package: org.jvnet.fastinfoset; resolution:="optional"
+                       Unresolved requirement: Import-Package: org.jvnet.fastinfoset.stax; resolution:="optional"
+                       Unresolved requirement: Import-Package: org.jvnet.staxex; resolution:="optional"
+                       Unresolved requirement: Import-Package: javax.activation; version="[1.2.0,2.0.0)"
+                         -> Export-Package: javax.activation; bundle-symbolic-name="javax.activation"; bundle-version="1.2.2.v20201119-1642"; version="1.2.2"
+                            javax.activation [567]
+                              Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=9.0))"
+  Unresolved requirement: Require-Bundle: org.eclipse.mylyn.reviews.ui
+    -> Bundle-SymbolicName: org.eclipse.mylyn.reviews.ui; bundle-version="2.16.0.v20190221-2342"; singleton:="true"
+       org.eclipse.mylyn.reviews.ui [329]
+         Unresolved requirement: Require-Bundle: org.eclipse.mylyn.tasks.ui; bundle-version="3.8.0"
+           -> Bundle-SymbolicName: org.eclipse.mylyn.tasks.ui; bundle-version="3.25.1.v20200512-0316"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.mylyn.tasks.ui; bundle-version="3.8.0"
+    -> Bundle-SymbolicName: org.eclipse.mylyn.tasks.ui; bundle-version="3.25.1.v20200512-0316"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.mylyn.hudson.core 4 0 2021-07-16 09:40:23.216
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.hudson.core [322]
+  Unresolved requirement: Require-Bundle: com.sun.xml.bind; bundle-version="2.2.0"
+    -> Bundle-SymbolicName: com.sun.xml.bind; bundle-version="2.3.3.v20201118-1818"
+       com.sun.xml.bind [564]
+         Unresolved requirement: Import-Package: com.sun.xml.fastinfoset.sax; resolution:="optional"
+         Unresolved requirement: Import-Package: com.sun.xml.fastinfoset.stax; resolution:="optional"
+         Unresolved requirement: Import-Package: org.jvnet.fastinfoset; resolution:="optional"
+         Unresolved requirement: Import-Package: org.jvnet.fastinfoset.stax; resolution:="optional"
+         Unresolved requirement: Import-Package: org.jvnet.staxex; resolution:="optional"
+         Unresolved requirement: Import-Package: javax.activation; version="[1.2.0,2.0.0)"
+           -> Export-Package: javax.activation; bundle-symbolic-name="javax.activation"; bundle-version="1.2.2.v20201119-1642"; version="1.2.2"
+              javax.activation [567]
+                Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=9.0))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.mylyn.hudson.ui 4 0 2021-07-16 09:40:23.225
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.hudson.ui [323]
+  Unresolved requirement: Require-Bundle: org.eclipse.ecf.discovery; bundle-version="3.0.0"; resolution:="optional"
+  Unresolved requirement: Require-Bundle: org.eclipse.ecf.provider.discovery; bundle-version="2.0.0"; resolution:="optional"
+  Unresolved requirement: Require-Bundle: org.eclipse.ecf.provider.jmdns; bundle-version="3.0.0"; resolution:="optional"
+  Unresolved requirement: Require-Bundle: org.eclipse.mylyn.builds.ui
+    -> Bundle-SymbolicName: org.eclipse.mylyn.builds.ui; bundle-version="1.17.0.v20190111-2151"; singleton:="true"
+       org.eclipse.mylyn.builds.ui [297]
+         Unresolved requirement: Require-Bundle: org.eclipse.mylyn.tasks.ui; bundle-version="3.8.0"
+           -> Bundle-SymbolicName: org.eclipse.mylyn.tasks.ui; bundle-version="3.25.1.v20200512-0316"; singleton:="true"
+              org.eclipse.mylyn.tasks.ui [334]
+                Unresolved requirement: Require-Bundle: org.eclipse.mylyn.commons.notifications.feed; bundle-version="1.0.0"
+                  -> Bundle-SymbolicName: org.eclipse.mylyn.commons.notifications.feed; bundle-version="1.17.1.v20200511-1958"; singleton:="true"
+                     org.eclipse.mylyn.commons.notifications.feed [302]
+                       Unresolved requirement: Require-Bundle: com.sun.xml.bind; bundle-version="2.2.0"
+                         -> Bundle-SymbolicName: com.sun.xml.bind; bundle-version="2.3.3.v20201118-1818"
+                            com.sun.xml.bind [564]
+                              Unresolved requirement: Import-Package: com.sun.xml.fastinfoset.sax; resolution:="optional"
+                              Unresolved requirement: Import-Package: com.sun.xml.fastinfoset.stax; resolution:="optional"
+                              Unresolved requirement: Import-Package: org.jvnet.fastinfoset; resolution:="optional"
+                              Unresolved requirement: Import-Package: org.jvnet.fastinfoset.stax; resolution:="optional"
+                              Unresolved requirement: Import-Package: org.jvnet.staxex; resolution:="optional"
+                              Unresolved requirement: Import-Package: javax.activation; version="[1.2.0,2.0.0)"
+                                -> Export-Package: javax.activation; bundle-symbolic-name="javax.activation"; bundle-version="1.2.2.v20201119-1642"; version="1.2.2"
+                                   javax.activation [567]
+                                     Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=9.0))"
+         Unresolved requirement: Require-Bundle: org.eclipse.mylyn.team.ui; bundle-version="3.8.0"
+           -> Bundle-SymbolicName: org.eclipse.mylyn.team.ui; bundle-version="3.25.1.v20200512-2113"; singleton:="true"
+              org.eclipse.mylyn.team.ui [335]
+                Unresolved requirement: Require-Bundle: org.eclipse.mylyn.tasks.ui; bundle-version="[3.8.0,4.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.mylyn.tasks.ui; bundle-version="3.25.1.v20200512-0316"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.mylyn.hudson.core
+    -> Bundle-SymbolicName: org.eclipse.mylyn.hudson.core; bundle-version="1.17.0.v20190115-0250"; singleton:="true"
+       org.eclipse.mylyn.hudson.core [322]
+         Unresolved requirement: Require-Bundle: com.sun.xml.bind; bundle-version="2.2.0"
+           -> Bundle-SymbolicName: com.sun.xml.bind; bundle-version="2.3.3.v20201118-1818"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.mylyn.reviews.ui 4 0 2021-07-16 09:40:23.233
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.reviews.ui [329]
+  Unresolved requirement: Require-Bundle: org.eclipse.mylyn.tasks.ui; bundle-version="3.8.0"
+    -> Bundle-SymbolicName: org.eclipse.mylyn.tasks.ui; bundle-version="3.25.1.v20200512-0316"; singleton:="true"
+       org.eclipse.mylyn.tasks.ui [334]
+         Unresolved requirement: Require-Bundle: org.eclipse.mylyn.commons.notifications.feed; bundle-version="1.0.0"
+           -> Bundle-SymbolicName: org.eclipse.mylyn.commons.notifications.feed; bundle-version="1.17.1.v20200511-1958"; singleton:="true"
+              org.eclipse.mylyn.commons.notifications.feed [302]
+                Unresolved requirement: Require-Bundle: com.sun.xml.bind; bundle-version="2.2.0"
+                  -> Bundle-SymbolicName: com.sun.xml.bind; bundle-version="2.3.3.v20201118-1818"
+                     com.sun.xml.bind [564]
+                       Unresolved requirement: Import-Package: com.sun.xml.fastinfoset.sax; resolution:="optional"
+                       Unresolved requirement: Import-Package: com.sun.xml.fastinfoset.stax; resolution:="optional"
+                       Unresolved requirement: Import-Package: org.jvnet.fastinfoset; resolution:="optional"
+                       Unresolved requirement: Import-Package: org.jvnet.fastinfoset.stax; resolution:="optional"
+                       Unresolved requirement: Import-Package: org.jvnet.staxex; resolution:="optional"
+                       Unresolved requirement: Import-Package: javax.activation; version="[1.2.0,2.0.0)"
+                         -> Export-Package: javax.activation; bundle-symbolic-name="javax.activation"; bundle-version="1.2.2.v20201119-1642"; version="1.2.2"
+                            javax.activation [567]
+                              Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=9.0))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.mylyn.tasks.ui 4 0 2021-07-16 09:40:23.240
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.tasks.ui [334]
+  Unresolved requirement: Require-Bundle: org.eclipse.mylyn.commons.notifications.feed; bundle-version="1.0.0"
+    -> Bundle-SymbolicName: org.eclipse.mylyn.commons.notifications.feed; bundle-version="1.17.1.v20200511-1958"; singleton:="true"
+       org.eclipse.mylyn.commons.notifications.feed [302]
+         Unresolved requirement: Require-Bundle: com.sun.xml.bind; bundle-version="2.2.0"
+           -> Bundle-SymbolicName: com.sun.xml.bind; bundle-version="2.3.3.v20201118-1818"
+              com.sun.xml.bind [564]
+                Unresolved requirement: Import-Package: com.sun.xml.fastinfoset.sax; resolution:="optional"
+                Unresolved requirement: Import-Package: com.sun.xml.fastinfoset.stax; resolution:="optional"
+                Unresolved requirement: Import-Package: org.jvnet.fastinfoset; resolution:="optional"
+                Unresolved requirement: Import-Package: org.jvnet.fastinfoset.stax; resolution:="optional"
+                Unresolved requirement: Import-Package: org.jvnet.staxex; resolution:="optional"
+                Unresolved requirement: Import-Package: javax.activation; version="[1.2.0,2.0.0)"
+                  -> Export-Package: javax.activation; bundle-symbolic-name="javax.activation"; bundle-version="1.2.2.v20201119-1642"; version="1.2.2"
+                     javax.activation [567]
+                       Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=9.0))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.mylyn.team.ui 4 0 2021-07-16 09:40:23.246
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.team.ui [335]
+  Unresolved requirement: Require-Bundle: org.eclipse.mylyn.tasks.ui; bundle-version="[3.8.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.mylyn.tasks.ui; bundle-version="3.25.1.v20200512-0316"; singleton:="true"
+       org.eclipse.mylyn.tasks.ui [334]
+         Unresolved requirement: Require-Bundle: org.eclipse.mylyn.commons.notifications.feed; bundle-version="1.0.0"
+           -> Bundle-SymbolicName: org.eclipse.mylyn.commons.notifications.feed; bundle-version="1.17.1.v20200511-1958"; singleton:="true"
+              org.eclipse.mylyn.commons.notifications.feed [302]
+                Unresolved requirement: Require-Bundle: com.sun.xml.bind; bundle-version="2.2.0"
+                  -> Bundle-SymbolicName: com.sun.xml.bind; bundle-version="2.3.3.v20201118-1818"
+                     com.sun.xml.bind [564]
+                       Unresolved requirement: Import-Package: com.sun.xml.fastinfoset.sax; resolution:="optional"
+                       Unresolved requirement: Import-Package: com.sun.xml.fastinfoset.stax; resolution:="optional"
+                       Unresolved requirement: Import-Package: org.jvnet.fastinfoset; resolution:="optional"
+                       Unresolved requirement: Import-Package: org.jvnet.fastinfoset.stax; resolution:="optional"
+                       Unresolved requirement: Import-Package: org.jvnet.staxex; resolution:="optional"
+                       Unresolved requirement: Import-Package: javax.activation; version="[1.2.0,2.0.0)"
+                         -> Export-Package: javax.activation; bundle-symbolic-name="javax.activation"; bundle-version="1.2.2.v20201119-1642"; version="1.2.2"
+                            javax.activation [567]
+                              Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=9.0))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.mylyn.wikitext.tasks.ui 4 0 2021-07-16 09:40:23.251
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.wikitext.tasks.ui [352]
+  Unresolved requirement: Require-Bundle: org.eclipse.mylyn.tasks.ui; bundle-version="3.7.0"
+    -> Bundle-SymbolicName: org.eclipse.mylyn.tasks.ui; bundle-version="3.25.1.v20200512-0316"; singleton:="true"
+       org.eclipse.mylyn.tasks.ui [334]
+         Unresolved requirement: Require-Bundle: org.eclipse.mylyn.commons.notifications.feed; bundle-version="1.0.0"
+           -> Bundle-SymbolicName: org.eclipse.mylyn.commons.notifications.feed; bundle-version="1.17.1.v20200511-1958"; singleton:="true"
+              org.eclipse.mylyn.commons.notifications.feed [302]
+                Unresolved requirement: Require-Bundle: com.sun.xml.bind; bundle-version="2.2.0"
+                  -> Bundle-SymbolicName: com.sun.xml.bind; bundle-version="2.3.3.v20201118-1818"
+                     com.sun.xml.bind [564]
+                       Unresolved requirement: Import-Package: com.sun.xml.fastinfoset.sax; resolution:="optional"
+                       Unresolved requirement: Import-Package: com.sun.xml.fastinfoset.stax; resolution:="optional"
+                       Unresolved requirement: Import-Package: org.jvnet.fastinfoset; resolution:="optional"
+                       Unresolved requirement: Import-Package: org.jvnet.fastinfoset.stax; resolution:="optional"
+                       Unresolved requirement: Import-Package: org.jvnet.staxex; resolution:="optional"
+                       Unresolved requirement: Import-Package: javax.activation; version="[1.2.0,2.0.0)"
+                         -> Export-Package: javax.activation; bundle-symbolic-name="javax.activation"; bundle-version="1.2.2.v20201119-1642"; version="1.2.2"
+                            javax.activation [567]
+                              Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=9.0))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.cdt.core.native 4 0 2021-07-16 09:40:23.518
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.cdt.core.native [592]
+  Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.php.composer.ui 4 0 2021-07-16 09:40:23.547
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.php.composer.ui [872]
+  Unresolved requirement: Require-Bundle: org.eclipse.tm.terminal.view.core
+    -> Bundle-SymbolicName: org.eclipse.tm.terminal.view.core; bundle-version="4.7.0.202008310315"; singleton:="true"
+       org.eclipse.tm.terminal.view.core [893]
+         Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+  Unresolved requirement: Require-Bundle: org.eclipse.tm.terminal.view.ui
+    -> Bundle-SymbolicName: org.eclipse.tm.terminal.view.ui; bundle-version="4.7.100.202011241127"; singleton:="true"
+       org.eclipse.tm.terminal.view.ui [894]
+         Unresolved requirement: Require-Bundle: org.eclipse.tm.terminal.view.core; bundle-version="4.5.0"
+           -> Bundle-SymbolicName: org.eclipse.tm.terminal.view.core; bundle-version="4.7.0.202008310315"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.tm.terminal.connector.process
+    -> Bundle-SymbolicName: org.eclipse.tm.terminal.connector.process; bundle-version="4.7.0.202008310315"; singleton:="true"
+       org.eclipse.tm.terminal.connector.process [891]
+         Unresolved requirement: Import-Package: org.eclipse.cdt.utils.spawner; mandatory:="native"
+           -> Export-Package: org.eclipse.cdt.utils.spawner; bundle-symbolic-name="org.eclipse.cdt.core.native"; bundle-version="6.1.0.202011181638"; version="5.7.0"
+              org.eclipse.cdt.core.native [592]
+                Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+         Unresolved requirement: Import-Package: org.eclipse.cdt.utils.pty; mandatory:="native"
+           -> Export-Package: org.eclipse.cdt.utils.pty; bundle-symbolic-name="org.eclipse.cdt.core.native"; bundle-version="6.1.0.202011181638"; version="5.7.0"
+  Unresolved requirement: Require-Bundle: org.eclipse.tm.terminal.control
+    -> Bundle-SymbolicName: org.eclipse.tm.terminal.control; bundle-version="5.0.0.202009071350"; singleton:="true"
+       org.eclipse.tm.terminal.control [892]
+         Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.tm.terminal.connector.process 4 0 2021-07-16 09:40:23.553
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.tm.terminal.connector.process [891]
+  Unresolved requirement: Import-Package: org.eclipse.cdt.utils.spawner; mandatory:="native"
+    -> Export-Package: org.eclipse.cdt.utils.spawner; bundle-symbolic-name="org.eclipse.cdt.core.native"; bundle-version="6.1.0.202011181638"; version="5.7.0"
+       org.eclipse.cdt.core.native [592]
+         Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+  Unresolved requirement: Import-Package: org.eclipse.cdt.utils.pty; mandatory:="native"
+    -> Export-Package: org.eclipse.cdt.utils.pty; bundle-symbolic-name="org.eclipse.cdt.core.native"; bundle-version="6.1.0.202011181638"; version="5.7.0"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.tm.terminal.control 4 0 2021-07-16 09:40:23.556
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.tm.terminal.control [892]
+  Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.tm.terminal.view.core 4 0 2021-07-16 09:40:23.559
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.tm.terminal.view.core [893]
+  Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.tm.terminal.view.ui 4 0 2021-07-16 09:40:23.562
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.tm.terminal.view.ui [894]
+  Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+  Unresolved requirement: Require-Bundle: org.eclipse.tm.terminal.view.core; bundle-version="4.5.0"
+    -> Bundle-SymbolicName: org.eclipse.tm.terminal.view.core; bundle-version="4.7.0.202008310315"; singleton:="true"
+       org.eclipse.tm.terminal.view.core [893]
+         Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+  Unresolved requirement: Require-Bundle: org.eclipse.tm.terminal.control; bundle-version="4.5.0"
+    -> Bundle-SymbolicName: org.eclipse.tm.terminal.control; bundle-version="5.0.0.202009071350"; singleton:="true"
+       org.eclipse.tm.terminal.control [892]
+         Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.jface 2 0 2021-07-16 09:40:30.536
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2021-07-16 09:40:30.536
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@4c5c0306,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@3677c508,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2021-07-16 09:40:30.536
+!MESSAGE A conflict occurred for ALT+SHIFT+X R:
+Binding(ALT+SHIFT+X R,
+	ParameterizedCommand(Command(org.eclipse.rap.tools.launch.RAPLaunchShortcut.run,Run RAP Application,
+		Run RAP Application,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@4518497e,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+X R,
+	ParameterizedCommand(Command(org.eclipse.wst.server.launchShortcut.run,Run on Server,
+		Run the current selection on a server,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@5fe024a7,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2021-07-16 09:40:30.536
+!MESSAGE A conflict occurred for ALT+SHIFT+D R:
+Binding(ALT+SHIFT+D R,
+	ParameterizedCommand(Command(org.eclipse.rap.tools.launch.RAPLaunchShortcut.debug,Debug RAP Application,
+		Debug RAP Application,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@7388486e,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+D R,
+	ParameterizedCommand(Command(org.eclipse.wst.server.launchShortcut.debug,Debug on Server,
+		Debug the current selection on a server,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@7bdf8c92,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2021-07-16 09:40:37.605
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\ASUS'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.

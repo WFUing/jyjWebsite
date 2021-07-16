@@ -1,0 +1,2 @@
+INDEX VERSION 1.4+D:\服务外包\寒假培训\jyjWebsite\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+3614644302.index

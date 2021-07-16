@@ -1,0 +1,82 @@
+@charset "UTF-8";
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/* 设置outer */
+#outer {
+	/* 设置宽和高 */
+	width: 520px;
+	height: 333px;
+	margin-left: 250px;
+	/* 设置背景颜色 */
+	background-color: yellowgreen;
+	/* 设置padding */
+	padding: 20px 0;
+	/* 开启相对定位 */
+	position: relative;
+	/* 裁剪溢出的内容 */
+	overflow: hidden;
+}
+
+/* 设置imgList */
+#imgList {
+	/* 去除项目符号 */
+	list-style: none;
+	/* 设置ul的宽度 */
+	/* width: 2600px; */
+	/* 开启绝对定位 */
+	position: absolute;
+	/* 
+                设置偏移量 
+                每向左移动520px，就会显示到下一张图片
+            */
+	left: 0px;
+}
+
+/* 设置图片中的li */
+#imgList li {
+	/* 设置浮动 */
+	float: left;
+	/* 设置左右外边距 */
+	margin: 0 10px;
+}
+
+/* 设置导航按钮 */
+#navDiv {
+	/*开启绝对定位*/
+	position: absolute;
+	/* 设置位置 */
+	bottom: 15px;
+	/*
+                设置left值
+                outer宽度 520
+                navDiv宽度 25*5 = 125
+                    520 - 125 = 395 
+                    395/2 = 197.5 
+            */
+	/* left: 197px; */
+}
+
+#navDiv a {
+	/* 设置超链接浮动 */
+	float: left;
+	/* 设置超链接宽高 */
+	width: 15px;
+	height: 15px;
+	/* 设置超链接颜色 */
+	background-color: red;
+	/* 设置左右外边距 */
+	margin: 0 5px;
+	/* 设置透明 */
+	opacity: 0.5;
+	/* 兼容IE8透明 */
+	filter: alpha(opacity = 50);
+}
+
+/*设置鼠标移入的效果*/
+#navDiv a:hover {
+	background-color: black;
+}
